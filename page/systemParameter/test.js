@@ -1773,7 +1773,7 @@ function getTNEvaluation() {
         YXtemp += "双手正撑、";
     }
     if (YXtemp != "") {
-        str += '<li>' + YXtemp.substr(0, YXtemp.length - 1) + '达到优秀水平</li>';
+        str += '<li><span style="font-weight: bold">' + YXtemp.substr(0, YXtemp.length - 1) + '</span>达到优秀水平</li>';
     }
     var HGtemp = "";
     if (parseInt(runScore) == 3) {
@@ -1804,7 +1804,7 @@ function getTNEvaluation() {
         HGtemp += "双手正撑、";
     }
     if (HGtemp != "") {
-        str += '<li>' + HGtemp.substr(0, HGtemp.length - 1) + '达到合格水平</li>';
+        str += '<li><span style="font-weight: bold">' + HGtemp.substr(0, HGtemp.length - 1) + '</span>达到合格水平</li>';
     }
     var Dtemp = "";
     if (parseInt(runScore) <= 2) {
@@ -1835,7 +1835,7 @@ function getTNEvaluation() {
         Dtemp += "双手正撑、";
     }
     if (Dtemp != "") {
-        str += '<li>' + Dtemp.substr(0, Dtemp.length - 1) + '分数略低,该幼儿还需努力并加强相应项目练习</li>';
+        str += '<li><span style="font-weight: bold">'+Dtemp.substr(0, Dtemp.length - 1)+'</span>分数略低，该幼儿还需努力并加强相应项目练习</li>';
     }
 
     var XLnengli = "";
@@ -1854,7 +1854,8 @@ function getTNEvaluation() {
     }
 
     if (XLnengli != "") {
-        str += '<li>在下学期，我们将针对该幼儿的' + XLnengli.substr(0, Dtemp.length - 1) + '几项进行训练;</li>';
+        str +='<br/>';
+        str += '<li>在下学期，我们将针对该幼儿的<span style="font-weight: bold">' + XLnengli.substr(0, XLnengli.length - 1) + '</span>进行着重训练。</li>';
         str += '<li>望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
     }
 
@@ -1868,7 +1869,7 @@ function getActivityPlan() {
         XLnengli += '<li>前滚翻、足跟竞走、劈叉排球</li>';
     }
     if (upperLimbStrength < 60) {
-        XLnengli += '<li>跳马、投掷、正撑拉车（幼儿将双脚放在自制轮子上，双脚伸平， 双手撑地，拉动轮子向前爬。）</li>';
+        XLnengli += '<li>跳马、投掷、正撑拉车</li>';
     }
     if (lowerLimbStrength < 60) {
         XLnengli += '<li>青蛙屈膝跳、仰卧蹬球、慢跑</li>';
@@ -1876,11 +1877,16 @@ function getActivityPlan() {
     if (balanceAbility < 60) {
         XLnengli += '<li>单脚跳、闭眼单足立、走平衡木</li>';
     }
-    $("#ActivityPlan").html(XLnengli);
+    if(XLnengli==""){
+        $("#ActivityPlanMoudle").css("display","none");
+    }else{
+        $("#ActivityPlan").html(XLnengli);
+    }
+
 }
 
 function getSensitiveQuality() {
-    var list = ['【无机盐】如牛奶、动物肝脏、绿色蔬菜、豆制品、紫菜等。', '【维生素】如柑橘、苹果、猕猴桃、西红柿、萝卜等；', '【有机化合物、矿物质、微量元素】合理搭配粗、杂粮；', '【钙质食物】如芝麻、黄花菜、萝卜、海带、芥菜、虾皮等。以及排骨汤或骨头汤；'];
+    var list = ['【无机盐】如牛奶、动物肝脏、绿色蔬菜、豆制品、紫菜等。', '【维生素】如柑橘、苹果、猕猴桃、西红柿、萝卜等。', '【有机化合物、矿物质、微量元素】合理搭配粗、杂粮。', '【钙质食物】如芝麻、黄花菜、萝卜、海带、芥菜、虾皮等。以及排骨汤或骨头汤。'];
     var XLnengli = "";
     if (sensitiveQuality >= 80) {
         XLnengli = '<li>' + list[1] + '</li><li>' + list[3] + '</li>';
@@ -1891,6 +1897,7 @@ function getSensitiveQuality() {
     } else if (sensitiveQuality <= 39) {
         XLnengli = '<li>' + list[0] + '</li><li>' + list[1] + '</li><li>' + list[2] + '</li><li>' + list[3] + '</li>';
     }
+
     $("#NutritionAdvice").html(XLnengli);
 }
 
