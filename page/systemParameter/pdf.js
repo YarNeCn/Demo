@@ -51,6 +51,6 @@ function download(id){
             }
         }
 
-        pdf.save($("#name").val()+'测试结果.pdf');
+        pdf.save($("#name").val()+'-'+$("#class").val()+'-'+$("#garden").val()+'体能测试报告.pdf');
     })
 }
