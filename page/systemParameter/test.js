@@ -50,7 +50,7 @@ function initData() {
     bodyFlexion = $("#bodyFlexion").val();
     handsUp = $("#handsUp").val();
     singleLeg = $("#singleLeg").val();
-    $("#reportContent").css("display","block");
+    $("#reportContent").css("display", "block");
     getScope();
     getTNEvaluation();
     getActivityPlan();
@@ -83,52 +83,52 @@ function getScope() {
     $("#usersex").text(sex);
     $("#usergarden").text(garden);
     $("#userclass").text(classR);
-    $("#runScope").text(parseFloat(run).toFixed(1) + " s");
+    $("#runScope").text(parseFloat(run).toFixed(2) + " s");
     $("#runScope").next().text(runScore + " 分");
 
-    $("#longJumpScore").text(parseFloat(longJump).toFixed(1) + " cm");
+    $("#longJumpScore").text(parseFloat(longJump).toFixed(2) + " cm");
     $("#longJumpScore").next().text(longJumpScore + " 分");
 
-    $("#oneJumpScore").text(parseFloat(oneJump).toFixed(1) + " s");
+    $("#oneJumpScore").text(parseFloat(oneJump).toFixed(2) + " s");
     $("#oneJumpScore").next().text(oneJumpScore + " 分");
 
-    $("#twoJumpScore").text(parseFloat(twoJump).toFixed(1) + " s");
+    $("#twoJumpScore").text(parseFloat(twoJump).toFixed(2) + " s");
     $("#twoJumpScore").next().text(twoJumpScore + " 分");
 
-    $("#bodyFlexionScore").text(parseFloat(bodyFlexion).toFixed(1) + " s");
+    $("#bodyFlexionScore").text(parseFloat(bodyFlexion).toFixed(2) + " s");
     $("#bodyFlexionScore").next().text(bodyFlexionScore + " 分");
 
 
-    $("#balanceScore").text(parseFloat(balance).toFixed(1) + " s");
+    $("#balanceScore").text(parseFloat(balance).toFixed(2) + " s");
     $("#balanceScore").next().text(balanceScore + " 分");
 
 
-    $("#throwScore").text(parseFloat(throwR).toFixed(1) + " s");
+    $("#throwScore").text(parseFloat(throwR).toFixed(2) + " s");
     $("#throwScore").next().text(throwScore + " 分");
 
-    $("#handsUpScore").text(parseFloat(handsUp).toFixed(1) + " s");
+    $("#handsUpScore").text(parseFloat(handsUp).toFixed(2) + " s");
     $("#handsUpScore").next().text(handsUpScore + " 分");
 
-    $("#singleLegScore").text(parseFloat(singleLeg).toFixed(1) + " s");
+    $("#singleLegScore").text(parseFloat(singleLeg).toFixed(2) + " s");
     $("#singleLegScore").next().text(singleLegScore + " 分");
 
-    flexibility = bodyFlexionScore * 10;
-    upperLimbStrength = (parseInt(throwScore) + parseInt(handsUpScore)) / 2 * 10;
-    lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore)) / 4 * 10;
-    balanceAbility = (parseInt(balanceScore) + parseInt(singleLeg)) / 2 * 10;
+    flexibility = bodyFlexionScore * 20;
+    upperLimbStrength = (parseInt(throwScore) + parseInt(handsUpScore)) / 2 * 20;
+    lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore)) / 4 * 20;
+    balanceAbility = (parseInt(balanceScore) + parseInt(singleLegScore)) / 2 * 20;
     sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore) + parseInt(singleLegScore)
-        + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 10 * 10;
+        + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 10 * 20;
 
-    $("#flexibility").text(flexibility+"分");
+    $("#flexibility").text(flexibility + "分");
     $("#flexibility").next().text(getFormatScore(flexibility));
-    $("#upperLimbStrength").text(upperLimbStrength+"分");
+    $("#upperLimbStrength").text(upperLimbStrength + "分");
     $("#upperLimbStrength").next().text(getFormatScore(upperLimbStrength));
-    $("#lowerLimbStrength").text(lowerLimbStrength+"分");
+    $("#lowerLimbStrength").text(lowerLimbStrength + "分");
     $("#lowerLimbStrength").next().text(getFormatScore(lowerLimbStrength));
-    $("#balanceAbility").text(balanceAbility+"分");
+    $("#balanceAbility").text(balanceAbility + "分");
     $("#balanceAbility").next().text(getFormatScore(balanceAbility));
-    $("#sensitiveQuality").text(sensitiveQuality+"分");
-    $("#sensitiveQuality").next().text(getFormatScore(sensitiveQuality));
+    $("#sensitiveQuality").text(sensitiveQuality + "分");
+    $("#sensitiveQuality").next().text(getFormatScoreLM(sensitiveQuality));
 }
 
 function getRun() {
@@ -318,7 +318,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 42 && parseInt(longJump) >= 30) {
                 return 2;
-            } else if (parseInt(longJump) <30) {
+            } else if (parseInt(longJump) < 30) {
                 return 1;
             }
         } else if (age === '3.5') {
@@ -330,7 +330,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 52 && parseInt(longJump) >= 35) {
                 return 2;
-            } else if (parseInt(longJump) <35) {
+            } else if (parseInt(longJump) < 35) {
                 return 1;
             }
         } else if (age === '4') {
@@ -342,7 +342,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 65 && parseInt(longJump) >= 47) {
                 return 2;
-            } else if (parseInt(longJump) <47) {
+            } else if (parseInt(longJump) < 47) {
                 return 1;
             }
         } else if (age === '4.5') {
@@ -354,7 +354,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 72 && parseInt(longJump) >= 55) {
                 return 2;
-            } else if (parseInt(longJump) <55) {
+            } else if (parseInt(longJump) < 55) {
                 return 1;
             }
         } else if (age === '5') {
@@ -366,7 +366,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 79 && parseInt(longJump) >= 65) {
                 return 2;
-            } else if (parseInt(longJump) <65) {
+            } else if (parseInt(longJump) < 65) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -378,7 +378,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 89 && parseInt(longJump) >= 70) {
                 return 2;
-            } else if (parseInt(longJump) <70) {
+            } else if (parseInt(longJump) < 70) {
                 return 1;
             }
         } else if (age === '6') {
@@ -390,7 +390,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 94 && parseInt(longJump) >= 79) {
                 return 2;
-            } else if (parseInt(longJump) <79) {
+            } else if (parseInt(longJump) < 79) {
                 return 1;
             }
         }
@@ -404,7 +404,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 39 && parseInt(longJump) >= 29) {
                 return 2;
-            } else if (parseInt(longJump) <29) {
+            } else if (parseInt(longJump) < 29) {
                 return 1;
             }
         } else if (age === '3.5') {
@@ -416,7 +416,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 49 && parseInt(longJump) >= 34) {
                 return 2;
-            } else if (parseInt(longJump) <34) {
+            } else if (parseInt(longJump) < 34) {
                 return 1;
             }
         } else if (age === '4') {
@@ -428,7 +428,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 59 && parseInt(longJump) >= 44) {
                 return 2;
-            } else if (parseInt(longJump) <44) {
+            } else if (parseInt(longJump) < 44) {
                 return 1;
             }
         } else if (age === '4.5') {
@@ -440,7 +440,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 67 && parseInt(longJump) >= 50) {
                 return 2;
-            } else if (parseInt(longJump) <50) {
+            } else if (parseInt(longJump) < 50) {
                 return 1;
             }
         } else if (age === '5') {
@@ -452,7 +452,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 74 && parseInt(longJump) >= 60) {
                 return 2;
-            } else if (parseInt(longJump) <60) {
+            } else if (parseInt(longJump) < 60) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -464,7 +464,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 81 && parseInt(longJump) >= 66) {
                 return 2;
-            } else if (parseInt(longJump) <66) {
+            } else if (parseInt(longJump) < 66) {
                 return 1;
             }
         } else if (age === '6') {
@@ -476,7 +476,7 @@ function getLongJump() {
                 return 3;
             } else if (parseInt(longJump) <= 86 && parseInt(longJump) >= 71) {
                 return 2;
-            } else if (parseInt(longJump) <71) {
+            } else if (parseInt(longJump) < 71) {
                 return 1;
             }
         }
@@ -494,7 +494,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 2.5 && parseFloat(throwR) >= 2.0) {
                 return 2;
-            } else if (parseFloat(throwR) <2.0) {
+            } else if (parseFloat(throwR) < 2.0) {
                 return 1;
             }
         } else if (age === '3.5') {
@@ -506,7 +506,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 2.5 && parseFloat(throwR) >= 2.0) {
                 return 2;
-            } else if (parseFloat(throwR) <2.0) {
+            } else if (parseFloat(throwR) < 2.0) {
                 return 1;
             }
         } else if (age === '4') {
@@ -518,7 +518,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 3.5 && parseFloat(throwR) >= 3.0) {
                 return 2;
-            } else if (parseFloat(throwR) <3.0) {
+            } else if (parseFloat(throwR) < 3.0) {
                 return 1;
             }
         } else if (age === '4.5') {
@@ -530,7 +530,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 4.0 && parseFloat(throwR) >= 3.0) {
                 return 2;
-            } else if (parseFloat(throwR) <3.0) {
+            } else if (parseFloat(throwR) < 3.0) {
                 return 1;
             }
         } else if (age === '5') {
@@ -542,7 +542,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 5.0 && parseFloat(throwR) >= 4.0) {
                 return 2;
-            } else if (parseFloat(throwR) <4.0) {
+            } else if (parseFloat(throwR) < 4.0) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -554,7 +554,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 5.5 && parseFloat(throwR) >= 4.0) {
                 return 2;
-            } else if (parseFloat(throwR) <4.0) {
+            } else if (parseFloat(throwR) < 4.0) {
                 return 1;
             }
         } else if (age === '6') {
@@ -566,7 +566,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 6.5 && parseFloat(throwR) >= 4.5) {
                 return 2;
-            } else if (parseFloat(throwR) <4.5) {
+            } else if (parseFloat(throwR) < 4.5) {
                 return 1;
             }
         }
@@ -580,7 +580,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 2.0 && parseFloat(throwR) >= 1.5) {
                 return 2;
-            } else if (parseFloat(throwR) <1.5) {
+            } else if (parseFloat(throwR) < 1.5) {
                 return 1;
             }
         } else if (age === '3.5') {
@@ -592,7 +592,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 2.5 && parseFloat(throwR) >= 2.0) {
                 return 2;
-            } else if (parseFloat(throwR) <2.0) {
+            } else if (parseFloat(throwR) < 2.0) {
                 return 1;
             }
         } else if (age === '4') {
@@ -604,7 +604,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 3.0 && parseFloat(throwR) >= 2.5) {
                 return 2;
-            } else if (parseFloat(throwR) <2.5) {
+            } else if (parseFloat(throwR) < 2.5) {
                 return 1;
             }
         } else if (age === '4.5') {
@@ -616,7 +616,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 3.0 && parseFloat(throwR) >= 2.5) {
                 return 2;
-            } else if (parseFloat(throwR) <2.5) {
+            } else if (parseFloat(throwR) < 2.5) {
                 return 1;
             }
         } else if (age === '5') {
@@ -628,7 +628,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 4.0 && parseFloat(throwR) >= 3.5) {
                 return 2;
-            } else if (parseFloat(throwR) <3.5) {
+            } else if (parseFloat(throwR) < 3.5) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -640,7 +640,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 4.5 && parseFloat(throwR) >= 3.5) {
                 return 2;
-            } else if (parseFloat(throwR) <3.5) {
+            } else if (parseFloat(throwR) < 3.5) {
                 return 1;
             }
         } else if (age === '6') {
@@ -652,7 +652,7 @@ function getThrowR() {
                 return 3;
             } else if (parseFloat(throwR) <= 4.5 && parseFloat(throwR) >= 3.5) {
                 return 2;
-            } else if (parseFloat(throwR) <3.5) {
+            } else if (parseFloat(throwR) < 3.5) {
                 return 1;
             }
         }
@@ -670,7 +670,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 7.0 && parseFloat(bodyFlexion) >= 3.2) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <3.2) {
+            } else if (parseFloat(bodyFlexion) < 3.2) {
                 return 1;
             }
         } else if (age === '3.5') {
@@ -682,7 +682,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 7.5 && parseFloat(bodyFlexion) >= 3.3) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <3.3) {
+            } else if (parseFloat(bodyFlexion) < 3.3) {
                 return 1;
             }
         } else if (age === '4') {
@@ -694,7 +694,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 7.5 && parseFloat(bodyFlexion) >= 3.5) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <3.5) {
+            } else if (parseFloat(bodyFlexion) < 3.5) {
                 return 1;
             }
         } else if (age === '4.5') {
@@ -706,7 +706,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 7.9 && parseFloat(bodyFlexion) >= 4.2) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <4.2) {
+            } else if (parseFloat(bodyFlexion) < 4.2) {
                 return 1;
             }
         } else if (age === '5') {
@@ -718,7 +718,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 8.4 && parseFloat(bodyFlexion) >= 4.5) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <4.5) {
+            } else if (parseFloat(bodyFlexion) < 4.5) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -730,7 +730,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 8.4 && parseFloat(bodyFlexion) >= 4.7) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <4.7) {
+            } else if (parseFloat(bodyFlexion) < 4.7) {
                 return 1;
             }
         } else if (age === '6') {
@@ -742,7 +742,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 8.5 && parseFloat(bodyFlexion) >= 4.9) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <4.9) {
+            } else if (parseFloat(bodyFlexion) < 4.9) {
                 return 1;
             }
         }
@@ -756,7 +756,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 9.9 && parseFloat(bodyFlexion) >= 6.3) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <6.3) {
+            } else if (parseFloat(bodyFlexion) < 6.3) {
                 return 1;
             }
         } else if (age === '3.5') {
@@ -768,7 +768,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 9.9 && parseFloat(bodyFlexion) >= 6.3) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <6.3) {
+            } else if (parseFloat(bodyFlexion) < 6.3) {
                 return 1;
             }
         } else if (age === '4') {
@@ -780,7 +780,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 10.9 && parseFloat(bodyFlexion) >= 7.0) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <7.0) {
+            } else if (parseFloat(bodyFlexion) < 7.0) {
                 return 1;
             }
         } else if (age === '4.5') {
@@ -792,7 +792,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 10.9 && parseFloat(bodyFlexion) >= 7.0) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <7.0) {
+            } else if (parseFloat(bodyFlexion) < 7.0) {
                 return 1;
             }
         } else if (age === '5') {
@@ -804,7 +804,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 11.4 && parseFloat(bodyFlexion) >= 7.3) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <7.3) {
+            } else if (parseFloat(bodyFlexion) < 7.3) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -816,7 +816,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 11.7 && parseFloat(bodyFlexion) >= 7.5) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <7.5) {
+            } else if (parseFloat(bodyFlexion) < 7.5) {
                 return 1;
             }
         } else if (age === '6') {
@@ -828,7 +828,7 @@ function getBodyFlexion() {
                 return 3;
             } else if (parseFloat(bodyFlexion) <= 11.7 && parseFloat(bodyFlexion) >= 7.5) {
                 return 2;
-            } else if (parseFloat(bodyFlexion) <7.5) {
+            } else if (parseFloat(bodyFlexion) < 7.5) {
                 return 1;
             }
         }
@@ -847,7 +847,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 16.9 && parseFloat(balance) <= 30.0) {
                 return 2;
-            } else if (parseFloat(balance) >30.0) {
+            } else if (parseFloat(balance) > 30.0) {
                 return 1;
             }
         } else if (age === '3.5') {
@@ -859,7 +859,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 15.1 && parseFloat(balance) <= 27.0) {
                 return 2;
-            } else if (parseFloat(balance) >27.0) {
+            } else if (parseFloat(balance) > 27.0) {
                 return 1;
             }
         } else if (age === '4') {
@@ -871,7 +871,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 11.6 && parseFloat(balance) <= 21.5) {
                 return 2;
-            } else if (parseFloat(balance) >21.5) {
+            } else if (parseFloat(balance) > 21.5) {
                 return 1;
             }
         } else if (age === '4.5') {
@@ -883,7 +883,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 9.7 && parseFloat(balance) <= 17.8) {
                 return 2;
-            } else if (parseFloat(balance) >17.8) {
+            } else if (parseFloat(balance) > 17.8) {
                 return 1;
             }
         } else if (age === '5') {
@@ -895,7 +895,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 7.9 && parseFloat(balance) <= 14.0) {
                 return 2;
-            } else if (parseFloat(balance) >14.0) {
+            } else if (parseFloat(balance) > 14.0) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -907,7 +907,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 6.8 && parseFloat(balance) <= 12.0) {
                 return 2;
-            } else if (parseFloat(balance) >12.0) {
+            } else if (parseFloat(balance) > 12.0) {
                 return 1;
             }
         } else if (age === '6') {
@@ -919,7 +919,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 5.4 && parseFloat(balance) <= 9.3) {
                 return 2;
-            } else if (parseFloat(balance) >9.3) {
+            } else if (parseFloat(balance) > 9.3) {
                 return 1;
             }
         }
@@ -933,7 +933,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 17.4 && parseFloat(balance) <= 32.4) {
                 return 2;
-            } else if (parseFloat(balance) >32.4) {
+            } else if (parseFloat(balance) > 32.4) {
                 return 1;
             }
         } else if (age === '3.5') {
@@ -945,7 +945,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 15.1 && parseFloat(balance) <= 27.4) {
                 return 2;
-            } else if (parseFloat(balance) >27.4) {
+            } else if (parseFloat(balance) > 27.4) {
                 return 1;
             }
         } else if (age === '4') {
@@ -957,7 +957,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 12.3 && parseFloat(balance) <= 22.5) {
                 return 2;
-            } else if (parseFloat(balance) >22.5) {
+            } else if (parseFloat(balance) > 22.5) {
                 return 1;
             }
         } else if (age === '4.5') {
@@ -969,7 +969,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 10.2 && parseFloat(balance) <= 18.6) {
                 return 2;
-            } else if (parseFloat(balance) >18.6) {
+            } else if (parseFloat(balance) > 18.6) {
                 return 1;
             }
         } else if (age === '5') {
@@ -981,7 +981,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 8.3 && parseFloat(balance) <= 14.0) {
                 return 2;
-            } else if (parseFloat(balance) >14.0) {
+            } else if (parseFloat(balance) > 14.0) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -993,7 +993,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 7.5 && parseFloat(balance) <= 12.5) {
                 return 2;
-            } else if (parseFloat(balance) >12.5) {
+            } else if (parseFloat(balance) > 12.5) {
                 return 1;
             }
         } else if (age === '6') {
@@ -1005,7 +1005,7 @@ function getBalance() {
                 return 3;
             } else if (parseFloat(balance) >= 6.2 && parseFloat(balance) <= 10.7) {
                 return 2;
-            } else if (parseFloat(balance) >10.7) {
+            } else if (parseFloat(balance) > 10.7) {
                 return 1;
             }
         }
@@ -1451,7 +1451,7 @@ function gethandsUp() {
                 return 1;
             }
         }
-    }else{
+    } else {
         if (age === '3') {
             if (parseInt(singleLeg) > 41) {
                 return 5;
@@ -1628,7 +1628,7 @@ function getSingleLeg() {
                 return 1;
             }
         }
-    }else{
+    } else {
         if (age === '3') {
             if (parseInt(singleLeg) > 21) {
                 return 5;
@@ -1731,121 +1731,131 @@ function getFormatScore(temp) {
     }
 }
 
+//综合评定分
+function getFormatScoreLM(temp) {
+    if (parseInt(temp >= 80)) {
+        return "表现优秀  望继续保持。";
+    } else if (parseInt(temp) <= 79 && parseInt(temp) >= 60) {
+        return "表现良好  望继续保持。";
+    } else{
+        return "需进行综合性全面练习。";
+    }
+}
 
 function getTNEvaluation() {
-    var str='<li>从测试各项测试结果来看，'+name+'小朋友:</li>';
-    var YXtemp="";
-    if(parseInt(runScore)>=4){
-        YXtemp+="十米往返跑、";
+    var str = '<li>从测试各项测试结果来看，' + name + '小朋友:</li>';
+    var YXtemp = "";
+    if (parseInt(runScore) >= 4) {
+        YXtemp += "十米往返跑、";
     }
-    if(parseInt(longJumpScore)>=4){
-        YXtemp+="立定跳远、";
+    if (parseInt(longJumpScore) >= 4) {
+        YXtemp += "立定跳远、";
     }
-    if(parseInt(throwScore)>=4){
-        YXtemp+="网球投掷、";
+    if (parseInt(throwScore) >= 4) {
+        YXtemp += "网球投掷、";
     }
-    if(parseInt(twoJumpScore)>=4){
-        YXtemp+="双脚连续跳、";
+    if (parseInt(twoJumpScore) >= 4) {
+        YXtemp += "双脚连续跳、";
     }
-    if(parseInt(oneJumpScore)>=4){
-        YXtemp+="单脚连续跳、";
+    if (parseInt(oneJumpScore) >= 4) {
+        YXtemp += "单脚连续跳、";
     }
-    if(parseInt(balanceScore)>=4){
-        YXtemp+="平衡能力、";
+    if (parseInt(balanceScore) >= 4) {
+        YXtemp += "平衡能力、";
     }
-    if(parseInt(singleLegScore)>=4){
-        YXtemp+="闭眼单足立、";
+    if (parseInt(singleLegScore) >= 4) {
+        YXtemp += "闭眼单足立、";
     }
-    if(parseInt(bodyFlexionScore)>=4){
-        YXtemp+="坐位体前屈、";
+    if (parseInt(bodyFlexionScore) >= 4) {
+        YXtemp += "坐位体前屈、";
     }
-    if(parseInt(handsUpScore)>=4){
-        YXtemp+="双手正撑、";
+    if (parseInt(handsUpScore) >= 4) {
+        YXtemp += "双手正撑、";
     }
-    if(YXtemp!=""){
-        str+='<li>'+YXtemp.substr(0,YXtemp.length-1)+'达到优秀水平</li>';
+    if (YXtemp != "") {
+        str += '<li>' + YXtemp.substr(0, YXtemp.length - 1) + '达到优秀水平</li>';
     }
-    var HGtemp="";
-    if(parseInt(runScore)==3){
-        HGtemp+="十米往返跑、";
+    var HGtemp = "";
+    if (parseInt(runScore) == 3) {
+        HGtemp += "十米往返跑、";
     }
-    if(parseInt(longJumpScore)==3){
-        HGtemp+="立定跳远、";
+    if (parseInt(longJumpScore) == 3) {
+        HGtemp += "立定跳远、";
     }
-    if(parseInt(throwScore)==3){
-        HGtemp+="网球投掷、";
+    if (parseInt(throwScore) == 3) {
+        HGtemp += "网球投掷、";
     }
-    if(parseInt(twoJumpScore)==3){
-        HGtemp+="双脚连续跳、";
+    if (parseInt(twoJumpScore) == 3) {
+        HGtemp += "双脚连续跳、";
     }
-    if(parseInt(oneJumpScore)==3){
-        HGtemp+="单脚连续跳、";
+    if (parseInt(oneJumpScore) == 3) {
+        HGtemp += "单脚连续跳、";
     }
-    if(parseInt(balanceScore)==3){
-        HGtemp+="平衡能力、";
+    if (parseInt(balanceScore) == 3) {
+        HGtemp += "平衡能力、";
     }
-    if(parseInt(singleLegScore)==3){
-        HGtemp+="闭眼单足立、";
+    if (parseInt(singleLegScore) == 3) {
+        HGtemp += "闭眼单足立、";
     }
-    if(parseInt(bodyFlexionScore)==3){
-        HGtemp+="坐位体前屈、";
+    if (parseInt(bodyFlexionScore) == 3) {
+        HGtemp += "坐位体前屈、";
     }
-    if(parseInt(handsUpScore)==3){
-        HGtemp+="双手正撑、";
+    if (parseInt(handsUpScore) == 3) {
+        HGtemp += "双手正撑、";
     }
-    if(HGtemp!=""){
-        str+='<li>'+HGtemp.substr(0,HGtemp.length-1)+'达到合格水平</li>';
+    if (HGtemp != "") {
+        str += '<li>' + HGtemp.substr(0, HGtemp.length - 1) + '达到合格水平</li>';
     }
-    var Dtemp="";
-    if(parseInt(runScore)<=2){
-        Dtemp+="十米往返跑、";
+    var Dtemp = "";
+    if (parseInt(runScore) <= 2) {
+        Dtemp += "十米往返跑、";
     }
-    if(parseInt(longJumpScore)<=2){
-        Dtemp+="立定跳远、";
+    if (parseInt(longJumpScore) <= 2) {
+        Dtemp += "立定跳远、";
     }
-    if(parseInt(throwScore)<=2){
-        Dtemp+="网球投掷、";
+    if (parseInt(throwScore) <= 2) {
+        Dtemp += "网球投掷、";
     }
-    if(parseInt(twoJumpScore)<=2){
-        Dtemp+="双脚连续跳、";
+    if (parseInt(twoJumpScore) <= 2) {
+        Dtemp += "双脚连续跳、";
     }
-    if(parseInt(oneJumpScore)<=2){
-        Dtemp+="单脚连续跳、";
+    if (parseInt(oneJumpScore) <= 2) {
+        Dtemp += "单脚连续跳、";
     }
-    if(parseInt(balanceScore)<=2){
-        Dtemp+="平衡能力、";
+    if (parseInt(balanceScore) <= 2) {
+        Dtemp += "平衡能力、";
     }
-    if(parseInt(singleLegScore)<=2){
-        Dtemp+="闭眼单足立、";
+    if (parseInt(singleLegScore) <= 2) {
+        Dtemp += "闭眼单足立、";
     }
-    if(parseInt(bodyFlexionScore)<=2){
-        Dtemp+="坐位体前屈、";
+    if (parseInt(bodyFlexionScore) <= 2) {
+        Dtemp += "坐位体前屈、";
     }
-    if(parseInt(handsUpScore)<=2){
-        Dtemp+="双手正撑、";
+    if (parseInt(handsUpScore) <= 2) {
+        Dtemp += "双手正撑、";
     }
-    if(Dtemp!=""){
-        str+='<li>'+Dtemp.substr(0,Dtemp.length-1)+'分数略低,该幼儿还需努力并加强相应项目练习</li>';
-    }
-
-    var XLnengli="";
-
-    if(flexibility<60){
-        XLnengli+="柔韧性、";
-    }
-    if(upperLimbStrength<60){
-        XLnengli+="上肢力量、";
-    }
-    if(lowerLimbStrength<60){
-        XLnengli+="下肢力量、";
-    }
-    if(balanceAbility<60){
-        XLnengli+="平衡能力、";
+    if (Dtemp != "") {
+        str += '<li>' + Dtemp.substr(0, Dtemp.length - 1) + '分数略低,该幼儿还需努力并加强相应项目练习</li>';
     }
 
-    if(XLnengli!=""){
-        str+='<li>在下学期，我们将针对该幼儿的'+XLnengli.substr(0,Dtemp.length-1)+'几项进行训练;</li>';
-        str+='<li>望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
+    var XLnengli = "";
+
+    if (flexibility < 60) {
+        XLnengli += "柔韧性、";
+    }
+    if (upperLimbStrength < 60) {
+        XLnengli += "上肢力量、";
+    }
+    if (lowerLimbStrength < 60) {
+        XLnengli += "下肢力量、";
+    }
+    if (balanceAbility < 60) {
+        XLnengli += "平衡能力、";
+    }
+
+    if (XLnengli != "") {
+        str += '<li>在下学期，我们将针对该幼儿的' + XLnengli.substr(0, Dtemp.length - 1) + '几项进行训练;</li>';
+        str += '<li>望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
     }
 
     $("#TNEvaluation").html(str);
@@ -1853,37 +1863,36 @@ function getTNEvaluation() {
 
 
 function getActivityPlan() {
-    var XLnengli="";
-    if(flexibility<60){
-        XLnengli+='<li>前滚翻、足跟竞走、劈叉排球</li>';
+    var XLnengli = "";
+    if (flexibility < 60) {
+        XLnengli += '<li>前滚翻、足跟竞走、劈叉排球</li>';
     }
-    if(upperLimbStrength<60){
-        XLnengli+='<li>跳马、投掷、正撑拉车（幼儿将双脚放在自制轮子上，双脚伸平， 双手撑地，拉动轮子向前爬。）</li>';
+    if (upperLimbStrength < 60) {
+        XLnengli += '<li>跳马、投掷、正撑拉车（幼儿将双脚放在自制轮子上，双脚伸平， 双手撑地，拉动轮子向前爬。）</li>';
     }
-    if(lowerLimbStrength<60){
-        XLnengli+='<li>青蛙屈膝跳、仰卧蹬球、慢跑</li>';
+    if (lowerLimbStrength < 60) {
+        XLnengli += '<li>青蛙屈膝跳、仰卧蹬球、慢跑</li>';
     }
-    if(balanceAbility<60){
-        XLnengli+='<li>单脚跳、闭眼单足立、走平衡木</li>';
+    if (balanceAbility < 60) {
+        XLnengli += '<li>单脚跳、闭眼单足立、走平衡木</li>';
     }
     $("#ActivityPlan").html(XLnengli);
 }
 
 function getSensitiveQuality() {
-    var list=['【无机盐】如牛奶、动物肝脏、绿色蔬菜、豆制品、紫菜等。','【维生素】如柑橘、苹果、猕猴桃、西红柿、萝卜等；','【有机化合物、矿物质、微量元素】合理搭配粗、杂粮；','【钙质食物】如芝麻、黄花菜、萝卜、海带、芥菜、虾皮等。以及排骨汤或骨头汤；'];
-    var XLnengli="";
-    if(sensitiveQuality>=80){
-        XLnengli='<li>'+list[1]+'</li><li>'+list[3]+'</li>';
-    }else if(sensitiveQuality>=60&&sensitiveQuality<=79){
-        XLnengli='<li>'+list[2]+'</li><li>'+list[3]+'</li>';
-    }else if(sensitiveQuality>=40&&sensitiveQuality<=59){
-        XLnengli='<li>'+list[1]+'</li><li>'+list[2]+'</li><li>'+list[3]+'</li>';
-    }else if(sensitiveQuality<=39){
-        XLnengli='<li>'+list[0]+'</li><li>'+list[1]+'</li><li>'+list[2]+'</li><li>'+list[3]+'</li>';
+    var list = ['【无机盐】如牛奶、动物肝脏、绿色蔬菜、豆制品、紫菜等。', '【维生素】如柑橘、苹果、猕猴桃、西红柿、萝卜等；', '【有机化合物、矿物质、微量元素】合理搭配粗、杂粮；', '【钙质食物】如芝麻、黄花菜、萝卜、海带、芥菜、虾皮等。以及排骨汤或骨头汤；'];
+    var XLnengli = "";
+    if (sensitiveQuality >= 80) {
+        XLnengli = '<li>' + list[1] + '</li><li>' + list[3] + '</li>';
+    } else if (sensitiveQuality >= 60 && sensitiveQuality <= 79) {
+        XLnengli = '<li>' + list[2] + '</li><li>' + list[3] + '</li>';
+    } else if (sensitiveQuality >= 40 && sensitiveQuality <= 59) {
+        XLnengli = '<li>' + list[1] + '</li><li>' + list[2] + '</li><li>' + list[3] + '</li>';
+    } else if (sensitiveQuality <= 39) {
+        XLnengli = '<li>' + list[0] + '</li><li>' + list[1] + '</li><li>' + list[2] + '</li><li>' + list[3] + '</li>';
     }
     $("#NutritionAdvice").html(XLnengli);
 }
-
 
 
 function echart() {
@@ -1929,7 +1938,7 @@ function echart() {
 
     setTimeout(function () {
         download("#reportContent");
-    },500)
+    }, 500)
 }
 function echart2() {
     var myChart = echarts.init(document.getElementById('main'));
@@ -1942,18 +1951,18 @@ function echart2() {
         },
         legend: {
             x: 'center',
-            data:['综合评定分析']
+            data: ['综合评定分析']
         },
         radar: [
             {
                 indicator: [
                     {name: '柔韧性', max: 100},
-                    {name: '下肢力量', max: 100},
-                    {name: '平衡素质', max: 100},
                     {name: '灵敏素质', max: 100},
+                    {name: '平衡素质', max: 100},
+                    {name: '下肢力量', max: 100},
                     {name: '上肢力量', max: 100}
                 ],
-                center: ['40%','55%'],
+                center: ['40%', '55%'],
                 radius: 150
             }
         ],
@@ -1966,7 +1975,7 @@ function echart2() {
                 itemStyle: {normal: {areaStyle: {type: 'default'}}},
                 data: [
                     {
-                        value: [flexibility, lowerLimbStrength, balanceAbility, sensitiveQuality, upperLimbStrength],
+                        value: [flexibility, sensitiveQuality, balanceAbility, lowerLimbStrength, upperLimbStrength],
                         name: '综合评定分析'
                     }
                 ]
@@ -1979,7 +1988,7 @@ function echart2() {
 
     setTimeout(function () {
         download("#reportContent");
-    },500)
+    }, 500)
 }
 
 
