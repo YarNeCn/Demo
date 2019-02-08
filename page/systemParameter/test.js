@@ -35,9 +35,10 @@ var balanceAbility; //平衡能力
 var sensitiveQuality; //灵敏素质
 
 function initData() {
+
     name = $("#name").val();
-    age = $("#age").val();
-    sex = $("#sex").val();
+    age = $('#age option:selected').val();
+    sex = $('input[name="sex"]:checked').val();
     classR = $("#class").val();
     garden = $("#garden").val();
     run = $("#run").val();
@@ -49,11 +50,12 @@ function initData() {
     bodyFlexion = $("#bodyFlexion").val();
     handsUp = $("#handsUp").val();
     singleLeg = $("#singleLeg").val();
+    $("#reportContent").css("display","block");
     getScope();
     getTNEvaluation();
     getActivityPlan();
     getSensitiveQuality();
-    echart();
+    echart2();
 
 }
 // 0 男 1 女
@@ -1920,6 +1922,56 @@ function echart() {
                 }
             ]
         }]
+    };
+
+    //使用制定的配置项和数据显示图表
+    myChart.setOption(option);
+
+    setTimeout(function () {
+        download("#reportContent");
+    },500)
+}
+function echart2() {
+    var myChart = echarts.init(document.getElementById('main'));
+    option = {
+        title: {
+            text: '综合评定分析'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            x: 'center',
+            data:['综合评定分析']
+        },
+        radar: [
+            {
+                indicator: [
+                    {name: '柔韧性', max: 100},
+                    {name: '下肢力量', max: 100},
+                    {name: '平衡素质', max: 100},
+                    {name: '灵敏素质', max: 100},
+                    {name: '上肢力量', max: 100}
+                ],
+                center: ['40%','55%'],
+                radius: 150
+            }
+        ],
+        series: [
+            {
+                type: 'radar',
+                tooltip: {
+                    trigger: 'item'
+                },
+                itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                data: [
+                    {
+                        value: [flexibility, lowerLimbStrength, balanceAbility, sensitiveQuality, upperLimbStrength],
+                        name: '综合评定分析'
+                    }
+                ]
+            }
+        ]
     };
 
     //使用制定的配置项和数据显示图表
