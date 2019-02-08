@@ -119,6 +119,7 @@ function getScope() {
     sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore) + parseInt(singleLegScore)
         + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 10 * 20;
 
+    alert(flexibility);
     $("#flexibility").text(flexibility + "分");
     $("#flexibility").next().text(getFormatScore(flexibility));
     $("#upperLimbStrength").text(upperLimbStrength + "分");
@@ -1718,7 +1719,7 @@ function getSingleLeg() {
 }
 //综合评定分
 function getFormatScore(temp) {
-    if (parseInt(temp >= 80)) {
+    if (parseInt(temp) >= 80) {
         return "表现优秀  望继续保持。";
     } else if (parseInt(temp) <= 79 && parseInt(temp) >= 60) {
         return "表现良好  望继续保持。";
