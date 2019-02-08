@@ -119,7 +119,6 @@ function getScope() {
     sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore) + parseInt(singleLegScore)
         + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 10 * 20;
 
-    alert(flexibility);
     $("#flexibility").text(flexibility + "分");
     $("#flexibility").next().text(getFormatScore(flexibility));
     $("#upperLimbStrength").text(upperLimbStrength + "分");
