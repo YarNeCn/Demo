@@ -18,6 +18,46 @@
 </head>
 <body class="childrenBody" id="pdfDiv">
 	<div class="layui-form">
+		<div class="layui-form-item">
+			<label class="layui-form-label">姓名</label>
+			<div class="layui-input-block">
+				<input type="text" name="title" id="name" lay-verify="title" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">年龄</label>
+			<div class="layui-input-block">
+				<select name="interest" id="age" lay-filter="aihao">
+					<option value=""></option>
+					<option value="3">3</option>
+					<option value="3.5" selected="">3.5</option>
+					<option value="4">4</option>
+					<option value="4.5">4.5</option>
+					<option value="5">5</option>
+					<option value="5.5">5.5</option>
+					<option value="6">6</option>
+				</select>
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">性别</label>
+			<div class="layui-input-block">
+				男<input type="radio" name="sex" value="男" title="男" checked="">女
+				<input type="radio" name="sex" value="女" title="女">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">班级</label>
+			<div class="layui-input-block">
+				<input type="text" name="title" id="class" lay-verify="title" autocomplete="off" placeholder="请输入班级" class="layui-input">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">园所</label>
+			<div class="layui-input-block">
+				<input type="text" name="title" id="garden" lay-verify="title" autocomplete="off" placeholder="请输入所在园所" class="layui-input">
+			</div>
+		</div>
 		<table class="layui-table">
 			<colgroup>
 				<col width="20%">
@@ -31,26 +71,6 @@
 		    	</tr>
 		    </thead>
 		    <tbody>
-		    	<tr>
-		    		<td>名字</td>
-		    		<td><input type="text" id="name" class="layui-input cmsName" lay-verify="required" placeholder="" value="张三"></td>
-		    	</tr>
-		    	<tr>
-		    		<td>年龄</td>
-		    		<td><input type="text" id="age" class="layui-input version" placeholder="" value="4"></td>
-		    	</tr>
-		    	<tr>
-		    		<td>性别</td>
-		    		<td><input type="text" id="sex" class="layui-input author" placeholder="" value="男"></td>
-		    	</tr>
-		    	<tr>
-		    		<td>班级</td>
-		    		<td><input type="text" id="class" class="layui-input homePage" placeholder=""></td>
-		    	</tr>
-		    	<tr>
-		    		<td>园所</td>
-		    		<td><input type="text" id="garden" class="layui-input server" placeholder=""></td>
-		    	</tr>
 		    	<tr>
 		    		<td>10米往返跑（s）</td>
 		    		<td><input type="text" id="run" class="layui-input dataBase" placeholder="" value="8"></td>
@@ -96,7 +116,7 @@
 		    </div>
 		</div>
 	</div>
-	<div id="reportContent" style="width: 80%;margin-left: 5%">
+	<div id="reportContent" style="width: 80%;margin-left: 5%;display: none">
 		<h1 style="text-align:center;font-size: 50px;">幼儿体能测试报告</h1>
 		<table class="layui-table" style="width: 20%;border:0px;">
 			<colgroup>
@@ -252,6 +272,7 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="../../layui/layui.js"></script>
+	<script type="text/javascript" src="../../js/layui.all.js"></script>
 	<script type="text/javascript" src="../../js/jquery.js"></script>
 	<script type="text/javascript" src="../../js/jspdf.debug.js"></script>
 	<script type="text/javascript" src="../../js/html2canvas.js"></script>
