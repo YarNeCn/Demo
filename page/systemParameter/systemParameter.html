@@ -91,7 +91,7 @@
 		    		<td><input type="text" id="oneJump" class="layui-input powerby" placeholder="" value="10"></td>
 		    	</tr>
 		    	<tr>
-		    		<td>平衡能力（s）</td>
+		    		<td>走平衡木（s）</td>
 					<td><input type="text" id="balance" class="layui-input powerby" placeholder="" value="8.8"></td>
 		    	</tr>
 		    	<tr>
@@ -154,9 +154,9 @@
 			</colgroup>
 			<thead>
 			<tr>
-				<th>名称</th>
-				<th>分值</th>
-				<th>达标分值</th>
+				<th>测试项目</th>
+				<th>测试数值</th>
+				<th>达标评分</th>
 			</tr>
 			</thead>
 			<tbody>
@@ -207,9 +207,10 @@
 			</tr>
 			</tbody>
 		</table>
+		<h1 style="color: red;font-size: 20px;">注： 5分-优   4分-良   3分-中   2分-差   1分-发展中</h1>
 
 			<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-			<div  style="width: 100%;">
+			<div  style="width: 100%;margin-top: 20px;">
 				<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
 				<div id="main" style="width: 50%; height: 400px;float: left;"></div>
 				<div style="width: 50%;float: left;margin-top: 130px;">
@@ -221,29 +222,29 @@
 						</colgroup>
 						<tbody>
 						<tr>
-							<td>柔韧性：</td>
+							<td>柔韧性</td>
 							<td id="flexibility"></td>
-							<td></td>
+							<td style="text-align: left"></td>
 						</tr>
 						<tr>
-							<td>上肢力量：</td>
+							<td>上肢力量</td>
 							<td id="upperLimbStrength"></td>
-							<td></td>
+							<td style="text-align: left"></td>
 						</tr>
 						<tr>
-							<td>下肢力量：</td>
+							<td>下肢力量</td>
 							<td id="lowerLimbStrength"></td>
-							<td></td>
+							<td style="text-align: left"></td>
 						</tr>
 						<tr>
-							<td>平衡能力：</td>
+							<td>平衡能力</td>
 							<td id="balanceAbility"></td>
-							<td></td>
+							<td style="text-align: left"></td>
 						</tr>
 						<tr>
 							<td>灵敏素质</td>
 							<td id="sensitiveQuality"></td>
-							<td></td>
+							<td style="text-align: left"></td>
 						</tr>
 						</tbody>
 					</table>
