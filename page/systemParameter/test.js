@@ -1875,33 +1875,34 @@ function getTNEvaluation() {
         XLnengli += "走平衡木、";
     }
 
-    if (XLnengli != "") {
-        str +='<br/>';
-        str += '<li>在下学期，我们将针对该幼儿的<span style="font-weight: bold">' + XLnengli.substr(0, XLnengli.length - 1) + '</span>进行着重训练。</li>';
-    }else{
-        str += '<li>在下学期，望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
-    }
     $("#TNEvaluation").html(str);
 }
 
 
 function getActivityPlan() {
     var XLnengli = "";
+    var temp="";
     if (flexibility < 60) {
         XLnengli += '<li>前滚翻、足跟竞走、劈叉排球</li>';
+        temp+="柔韧性、";
     }
     if (upperLimbStrength < 60) {
         XLnengli += '<li>跳马、投掷、正撑拉车</li>';
+        temp+="上肢力量、";
     }
     if (lowerLimbStrength < 60) {
         XLnengli += '<li>青蛙屈膝跳、仰卧蹬球、慢跑</li>';
+        temp+="下肢力量、";
     }
     if (balanceAbility < 60) {
         XLnengli += '<li>单脚跳、闭眼单足立、走平衡木</li>';
+        temp+="平衡能力、";
     }
     if(XLnengli==""){
-        $("#ActivityPlanMoudle").css("display","none");
+        XLnengli += '<li>该幼儿各项测试均达标，体能发展较为正常。在下学期，望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
     }else{
+        XLnengli += '<li>在下学期，我们将针对该幼儿的<span style="font-weight: bold">' + temp.substr(0, XLnengli.length - 1) + '</span>进行着重训练。</li>';
+        XLnengli += '<li>望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
         $("#ActivityPlan").html(XLnengli);
     }
 
