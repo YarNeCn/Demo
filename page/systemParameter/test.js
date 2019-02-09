@@ -18,7 +18,6 @@ $(function () {
     });
 
     $("#reset").click(function (e) {
-        alert();
         $("#resetForm")[0].reset();
     });
 
@@ -131,6 +130,7 @@ function getScope() {
         lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore)  + parseInt(twoJumpScore)) / 3 * 20;
         sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore)  + parseInt(twoJumpScore) + parseInt(singleLegScore)
             + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 8 * 20;
+        $("#oneJumpDiv").remove();
     }
 
     balanceAbility = (parseInt(balanceScore) + parseInt(singleLegScore)) / 2 * 20;
