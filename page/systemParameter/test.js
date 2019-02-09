@@ -135,6 +135,11 @@ function getScope() {
 
     balanceAbility = (parseInt(balanceScore) + parseInt(singleLegScore)) / 2 * 20;
 
+    flexibility=flexibility.toFixed(0);
+    upperLimbStrength=upperLimbStrength.toFixed(0);
+    lowerLimbStrength=lowerLimbStrength.toFixed(0);
+    sensitiveQuality=sensitiveQuality.toFixed(0);
+    balanceAbility=balanceAbility.toFixed(0);
 
     $("#flexibility").text(flexibility + "分");
     $("#flexibility").next().text(getFormatScore(flexibility));
