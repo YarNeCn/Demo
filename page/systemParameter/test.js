@@ -106,13 +106,13 @@ function getScope() {
     $("#balanceScore").next().text(balanceScore + " 分");
 
 
-    $("#throwScore").text(parseFloat(throwR).toFixed(2) + " s");
+    $("#throwScore").text(parseFloat(throwR).toFixed(2) + " m");
     $("#throwScore").next().text(throwScore + " 分");
 
     $("#handsUpScore").text(parseFloat(handsUp).toFixed(2) + " s");
     $("#handsUpScore").next().text(handsUpScore + " 分");
 
-    $("#singleLegScore").text(parseFloat(singleLeg).toFixed(2) + " m");
+    $("#singleLegScore").text(parseFloat(singleLeg).toFixed(2) + " s");
     $("#singleLegScore").next().text(singleLegScore + " 分");
 
     flexibility = bodyFlexionScore * 20;
