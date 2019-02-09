@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4602b459-d9ac-4596-aee5-e49a41f0ce57" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/systemParameter/pdf.js" afterPath="$PROJECT_DIR$/page/systemParameter/pdf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/systemParameter/systemParameter.html" afterPath="$PROJECT_DIR$/page/systemParameter/systemParameter.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/systemParameter/test.js" afterPath="$PROJECT_DIR$/page/systemParameter/test.js" />
     </list>
@@ -24,8 +23,8 @@
       <file leaf-file-name="systemParameter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/systemParameter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="150" column="31" lean-forward="false" selection-start-line="150" selection-start-column="31" selection-end-line="150" selection-end-column="31" />
+            <state relative-caret-position="173">
+              <caret line="240" column="41" lean-forward="true" selection-start-line="240" selection-start-column="41" selection-end-line="240" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,27 +61,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="402">
+              <caret line="1865" column="22" lean-forward="true" selection-start-line="1865" selection-start-column="22" selection-end-line="1865" selection-end-column="22" />
               <folding>
-                <marker date="1549724124651" expanded="true" signature="72442:72459" ph="..." />
-                <marker date="1549724124651" expanded="true" signature="73263:73280" ph="..." />
-                <marker date="1549724124651" expanded="true" signature="74073:74090" ph="..." />
-                <marker date="1549724124651" expanded="true" signature="74559:74576" ph="..." />
+                <marker date="1549724976967" expanded="true" signature="72442:72459" ph="..." />
+                <marker date="1549724976967" expanded="true" signature="73263:73280" ph="..." />
+                <marker date="1549724976967" expanded="true" signature="74073:74090" ph="..." />
+                <marker date="1549724976967" expanded="true" signature="74559:74576" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pdf.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page/systemParameter/pdf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +88,11 @@
       <find>ActivityPlan</find>
       <find>getSensitiveQuality</find>
       <find>alert</find>
+      <find>十米往返跑</find>
+      <find>立定跳远</find>
       <find>平衡能力</find>
+      <find>TNEvaluation</find>
+      <find>网球投掷</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,9 +118,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="userSettingsFile" value="D:\MyImportant\maven-repository\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-12" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
@@ -624,7 +624,7 @@
       <updated>1549606370478</updated>
       <workItem from="1549606379542" duration="291000" />
       <workItem from="1549614370477" duration="7306000" />
-      <workItem from="1549720140612" duration="3987000" />
+      <workItem from="1549720140612" duration="4854000" />
     </task>
     <task id="LOCAL-00001" summary="修改页面样式">
       <created>1549616537233</created>
@@ -679,10 +679,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11584000" />
+    <option name="totallyTimeSpent" value="12451000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-12" y="0" width="1938" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -700,7 +701,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.060622316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.060622316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -818,10 +819,10 @@
         <state relative-caret-position="53790">
           <caret line="1793" column="20" lean-forward="false" selection-start-line="1793" selection-start-column="18" selection-end-line="1793" selection-end-column="20" />
           <folding>
-            <marker date="1549724124651" expanded="true" signature="72442:72459" ph="..." />
-            <marker date="1549724124651" expanded="true" signature="73263:73280" ph="..." />
-            <marker date="1549724124651" expanded="true" signature="74073:74090" ph="..." />
-            <marker date="1549724124651" expanded="true" signature="74559:74576" ph="..." />
+            <marker date="1549724976967" expanded="true" signature="72442:72459" ph="..." />
+            <marker date="1549724976967" expanded="true" signature="73263:73280" ph="..." />
+            <marker date="1549724976967" expanded="true" signature="74073:74090" ph="..." />
+            <marker date="1549724976967" expanded="true" signature="74559:74576" ph="..." />
           </folding>
         </state>
       </provider>
@@ -889,10 +890,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/systemParameter/pdf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/systemParameter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="150" column="31" lean-forward="false" selection-start-line="150" selection-start-column="31" selection-end-line="150" selection-end-column="31" />
+        <state relative-caret-position="173">
+          <caret line="240" column="41" lean-forward="true" selection-start-line="240" selection-start-column="41" selection-end-line="240" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -930,22 +939,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="402">
+          <caret line="1865" column="22" lean-forward="true" selection-start-line="1865" selection-start-column="22" selection-end-line="1865" selection-end-column="22" />
           <folding>
-            <marker date="1549724124651" expanded="true" signature="72442:72459" ph="..." />
-            <marker date="1549724124651" expanded="true" signature="73263:73280" ph="..." />
-            <marker date="1549724124651" expanded="true" signature="74073:74090" ph="..." />
-            <marker date="1549724124651" expanded="true" signature="74559:74576" ph="..." />
+            <marker date="1549724976967" expanded="true" signature="72442:72459" ph="..." />
+            <marker date="1549724976967" expanded="true" signature="73263:73280" ph="..." />
+            <marker date="1549724976967" expanded="true" signature="74073:74090" ph="..." />
+            <marker date="1549724976967" expanded="true" signature="74559:74576" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/systemParameter/pdf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -1856,9 +1856,8 @@ function getTNEvaluation() {
     if (XLnengli != "") {
         str +='<br/>';
         str += '<li>在下学期，我们将针对该幼儿的<span style="font-weight: bold">' + XLnengli.substr(0, XLnengli.length - 1) + '</span>进行着重训练。</li>';
-        str += '<li>望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
     }
-
+    str += '<li>望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
     $("#TNEvaluation").html(str);
 }
 
@@ -1955,10 +1954,6 @@ function echart2() {
         },
         tooltip: {
             trigger: 'axis'
-        },
-        legend: {
-            x: 'center',
-            data: ['综合评定分析']
         },
         radar: [
             {

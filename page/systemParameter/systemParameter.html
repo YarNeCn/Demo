@@ -16,6 +16,9 @@
 		#reportContent td, #reportContent th {
 			font-size: 20px;
 		}
+		#reportContent td, #reportContent th {
+			border: 1px solid black;
+		}
 		#reportContent ul{
 			font-size: 20px;
 		}
@@ -76,41 +79,43 @@
 		    </thead>
 		    <tbody>
 		    	<tr>
-		    		<td>10米往返跑（s）</td>
+		    		<td>十米往返跑（s）</td>
 		    		<td><input type="text" id="run" class="layui-input dataBase" placeholder="" value="8"></td>
 		    	</tr>
+				<tr>
+					<td>双脚连续跳（s）</td>
+					<td><input type="text" id="twoJump"  class="layui-input keywords" placeholder="" value="10"></td>
+				</tr>
+				<tr>
+					<td>单脚连续跳（s）</td>
+					<td><input type="text" id="oneJump" class="layui-input powerby" placeholder="" value="10"></td>
+				</tr>
 		    	<tr>
 		    		<td>立定跳远（cm）</td>
 		    		<td><input type="text" id="longJump" class="layui-input maxUpload" placeholder="" value="110"></td>
 		    	</tr>
-		    	<tr>
-		    		<td>网球投掷（m）</td>
-		    		<td><input type="text" id="throw" class="layui-input userRights" placeholder="" value="3"></td>
-		    	</tr>
-		    	<tr>
-		    		<td>双脚连续跳（s）</td>
-		    		<td><input type="text" id="twoJump"  class="layui-input keywords" placeholder="" value="10"></td>
-		    	</tr>
-		    	<tr>
-		    		<td>单脚连续跳（s）</td>
-		    		<td><input type="text" id="oneJump" class="layui-input powerby" placeholder="" value="10"></td>
-		    	</tr>
-		    	<tr>
-		    		<td>走平衡木（s）</td>
-					<td><input type="text" id="balance" class="layui-input powerby" placeholder="" value="8.8"></td>
-		    	</tr>
-		    	<tr>
-		    		<td>闭眼单足立（s）</td>
-		    		<td><input type="text" id="singleLeg" class="layui-input record" placeholder="" value="10"></td>
-		    	</tr>
-				<tr>
-					<td>坐位体前屈（cm）</td>
-					<td><input type="text" id="bodyFlexion" class="layui-input record" placeholder="" value="13.2"></td>
-				</tr>
 				<tr>
 					<td>双手正撑（s）</td>
 					<td><input type="text" id="handsUp" class="layui-input record" placeholder="" value="10"></td>
 				</tr>
+				<tr>
+					<td>闭眼单足立（s）</td>
+					<td><input type="text" id="singleLeg" class="layui-input record" placeholder="" value="10"></td>
+				</tr>
+				<tr>
+					<td>坐位体前屈（cm）</td>
+					<td><input type="text" id="bodyFlexion" class="layui-input record" placeholder="" value="13.2"></td>
+				</tr>
+		    	<tr>
+		    		<td>走平衡木（s）</td>
+					<td><input type="text" id="balance" class="layui-input powerby" placeholder="" value="8.8"></td>
+		    	</tr>
+				<tr>
+					<td>网球投掷（m）</td>
+					<td><input type="text" id="throw" class="layui-input userRights" placeholder="" value="3"></td>
+				</tr>
+
+
 		    </tbody>
 		</table>
 		<div class="layui-form-item" style="text-align: right;">
