@@ -13,7 +13,12 @@
 	<style type="text/css">
 		.layui-table td, .layui-table th{ text-align: center; }
 		.layui-table td{ padding:5px; }
-
+		#reportContent td, #reportContent th {
+			font-size: 20px;
+		}
+		#reportContent ul{
+			font-size: 20px;
+		}
 	</style>
 </head>
 <body class="childrenBody" id="pdfDiv">
@@ -115,48 +120,42 @@
 		    </div>
 		</div>
 	</div>
-	<div id="reportContent" style="width: 80%;margin-left: 5%;display: none">
+	<div id="reportContent" style="width: 80%;margin:0 auto;display: none">
+		<div style="width: 80%;margin: 0 auto;">
 		<h1 style="text-align:center;font-size: 50px;">幼儿体能测试报告</h1>
-		<table class="layui-table" style="width: 20%;border:0px;">
-			<colgroup>
-				<col width="20">
-				<col width="50">
-			</colgroup>
+		<table class="layui-table" style="width: 100%;border:0px;">
 			<tbody>
 			<tr>
-				<td>姓名：</td>
-				<td id="username" style="text-align: left"></td>
+				<td rowspan="2" style="width: 13%">姓名：</td>
+				<td rowspan="2"  id="username" style="text-align: left;width: 13%"></td>
+				<td  style="width: 13%">年龄：</td>
+				<td id="userage" style="text-align: left;width: 13%"></td>
+				<td  style="width: 10%">班级：</td>
+				<td id="userclass" style="text-align: left;"></td>
 			</tr>
 			<tr>
-				<td>年龄：</td>
-				<td id="userage" style="text-align: left"></td>
+				<td  style="width: 13%">性别：</td>
+				<td id="usersex" style="text-align: left;width: 13%"></td>
+				<td  style="width: 10%">园所：</td>
+				<td id="usergarden" style="text-align: left;"></td>
 			</tr>
-			<tr>
-				<td>性别：</td>
-				<td id="usersex" style="text-align: left"></td>
-			</tr>
-			<tr>
-				<td>班级：</td>
-				<td id="userclass" style="text-align: left"></td>
-			</tr>
-			<tr>
-				<td>园所：</td>
-				<td id="usergarden" style="text-align: left"></td>
-			</tr>
+
+
 			</tbody>
 		</table>
-		<h1 style="text-align:left;font-size: 18px;font-weight: bold">各项测试结果：</h1>
+		<h1 style="text-align:left;font-size: 18px;font-weight: bold">各项测试结果：<span style="font-weight: normal;font-size: 15px;">（注： 5分-优   4分-良   3分-中   2分-差   1分-发展中）</span></h1>
 		<table class="layui-table">
 			<colgroup>
 				<col width="150">
-				<col width="200">
-				<col>
+				<col width="150">
+				<col width="150">
 			</colgroup>
 			<thead>
 			<tr>
 				<th>测试项目</th>
 				<th>测试数值</th>
 				<th>达标评分</th>
+				<th>幼儿体能评价</th>
 			</tr>
 			</thead>
 			<tbody>
@@ -164,6 +163,13 @@
 				<td>十米往返跑</td>
 				<td id="runScope"></td>
 				<td></td>
+				<td rowspan="9" valign="top" style="text-align: left">
+					<div style="margin-top: 20px;">
+						<ul id="TNEvaluation" style="line-height:25px;">
+
+						</ul>
+					</div>
+				</td>
 			</tr>
 			<tr>
 				<td>双脚连续跳</td>
@@ -207,13 +213,13 @@
 			</tr>
 			</tbody>
 		</table>
-		<h1 style="color: red;font-size: 20px;">注： 5分-优   4分-良   3分-中   2分-差   1分-发展中</h1>
+
 
 			<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
 			<div  style="width: 100%;margin-top: 20px;">
 				<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-				<div id="main" style="width: 50%; height: 400px;float: left;"></div>
-				<div style="width: 50%;float: left;margin-top: 130px;">
+				<div id="main" style="width: 46%; height: 400px;float: left;"></div>
+				<div style="width: 54%;float: left;margin-top: 130px;">
 					<table class="layui-table" >
 						<colgroup>
 							<col width="150">
@@ -250,13 +256,8 @@
 					</table>
 				</div>
 			</div>
-		<div style="width: 80%;margin-left: 5%">
-			<div style="clear: both;margin-top: 20px;">
-				<h1 style="text-align:left;font-size: 18px;font-weight: bold">幼儿体能评价：</h1>
-				<ul id="TNEvaluation" style="line-height:25px;">
+		<div style="width: 80%;clear: both;">
 
-				</ul>
-			</div>
 			<div style="margin-top: 20px;" id="ActivityPlanMoudle">
 				<h1 style="text-align:left;font-size: 18px;font-weight: bold">推荐活动方案：</h1>
 				<ul id="ActivityPlan" style="line-height:25px;">
@@ -269,6 +270,7 @@
 
 				</ul>
 			</div>
+		</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="../../layui/layui.js"></script>

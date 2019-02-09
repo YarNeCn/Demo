@@ -1761,7 +1761,7 @@ function getTNEvaluation() {
         YXtemp += "单脚连续跳、";
     }
     if (parseInt(balanceScore) >= 4) {
-        YXtemp += "平衡能力、";
+        YXtemp += "走平衡木、";
     }
     if (parseInt(singleLegScore) >= 4) {
         YXtemp += "闭眼单足立、";
@@ -1792,7 +1792,7 @@ function getTNEvaluation() {
         HGtemp += "单脚连续跳、";
     }
     if (parseInt(balanceScore) == 3) {
-        HGtemp += "平衡能力、";
+        HGtemp += "走平衡木、";
     }
     if (parseInt(singleLegScore) == 3) {
         HGtemp += "闭眼单足立、";
@@ -1823,7 +1823,7 @@ function getTNEvaluation() {
         Dtemp += "单脚连续跳、";
     }
     if (parseInt(balanceScore) <= 2) {
-        Dtemp += "平衡能力、";
+        Dtemp += "走平衡木、";
     }
     if (parseInt(singleLegScore) <= 2) {
         Dtemp += "闭眼单足立、";
@@ -1850,7 +1850,7 @@ function getTNEvaluation() {
         XLnengli += "下肢力量、";
     }
     if (balanceAbility < 60) {
-        XLnengli += "平衡能力、";
+        XLnengli += "走平衡木、";
     }
 
     if (XLnengli != "") {
