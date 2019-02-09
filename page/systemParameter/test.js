@@ -298,7 +298,7 @@ function getRun() {
                 return 3;
             } else if (parseFloat(run) >= 8.1 && parseFloat(run) <= 9.6) {
                 return 2;
-            } else if (parseFloat(run) >= 9.7 && parseFloat(run) <= 11.2) {
+            } else if (parseFloat(run) >= 9.7) {
                 return 1;
             }
         } else if (age === '5.5') {
@@ -310,7 +310,7 @@ function getRun() {
                 return 3;
             } else if (parseFloat(run) >= 7.7 && parseFloat(run) <= 9.0) {
                 return 2;
-            } else if (parseFloat(run) >= 9.1 && parseFloat(run) <= 10.5) {
+            } else if (parseFloat(run) >= 9.1) {
                 return 1;
             }
         } else if (age === '6') {
@@ -322,7 +322,7 @@ function getRun() {
                 return 3;
             } else if (parseFloat(run) >= 7.3 && parseFloat(run) <= 8.5) {
                 return 2;
-            } else if (parseFloat(run) >= 8.6 && parseFloat(run) <= 10.2) {
+            } else if (parseFloat(run) >= 8.6) {
                 return 1;
             }
         }
