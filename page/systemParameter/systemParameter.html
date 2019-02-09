@@ -25,7 +25,8 @@
 	</style>
 </head>
 <body class="childrenBody" id="pdfDiv">
-	<div class="layui-form">
+<form id="resetForm">
+	<div class="layui-form" id="">
 		<div class="layui-form-item">
 			<label class="layui-form-label">姓名</label>
 			<div class="layui-input-block">
@@ -121,10 +122,11 @@
 		<div class="layui-form-item" style="text-align: right;">
 			<div class="layui-input-block">
 				<button class="layui-btn" id="click"  >立即提交</button>
-				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+				<button type="reset"  id="reset" class="layui-btn layui-btn-primary">重置</button>
 		    </div>
 		</div>
 	</div>
+</form>
 	<div id="reportContent" style="width: 80%;margin:0 auto;display: none">
 		<div style="width: 80%;margin: 0 auto;">
 		<h1 style="text-align:center;font-size: 50px;">幼儿体能测试报告</h1>
