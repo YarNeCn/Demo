@@ -112,7 +112,7 @@ function getScope() {
     $("#handsUpScore").text(parseFloat(handsUp).toFixed(2) + " s");
     $("#handsUpScore").next().text(handsUpScore + " 分");
 
-    $("#singleLegScore").text(parseFloat(singleLeg).toFixed(2) + " s");
+    $("#singleLegScore").text(parseFloat(singleLeg).toFixed(2) + " m");
     $("#singleLegScore").next().text(singleLegScore + " 分");
 
     flexibility = bodyFlexionScore * 20;
