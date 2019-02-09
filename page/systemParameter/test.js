@@ -89,8 +89,11 @@ function getScope() {
     $("#longJumpScore").text(parseFloat(longJump).toFixed(2) + " cm");
     $("#longJumpScore").next().text(longJumpScore + " 分");
 
-    $("#oneJumpScore").text(parseFloat(oneJump).toFixed(2) + " s");
-    $("#oneJumpScore").next().text(oneJumpScore + " 分");
+    if(age>=5){
+        $("#oneJumpScore").text(parseFloat(oneJump).toFixed(2) + " s");
+        $("#oneJumpScore").next().text(oneJumpScore + " 分");
+    }
+
 
     $("#twoJumpScore").text(parseFloat(twoJump).toFixed(2) + " s");
     $("#twoJumpScore").next().text(twoJumpScore + " 分");
@@ -114,10 +117,18 @@ function getScope() {
 
     flexibility = bodyFlexionScore * 20;
     upperLimbStrength = (parseInt(throwScore) + parseInt(handsUpScore)) / 2 * 20;
-    lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore)) / 4 * 20;
+    if(age>=5){
+        lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore)) / 4 * 20;
+        sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore) + parseInt(singleLegScore)
+            + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 9 * 20;
+    }else{
+        lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore)  + parseInt(twoJumpScore)) / 3 * 20;
+        sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore)  + parseInt(twoJumpScore) + parseInt(singleLegScore)
+            + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 8 * 20;
+    }
+
     balanceAbility = (parseInt(balanceScore) + parseInt(singleLegScore)) / 2 * 20;
-    sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore) + parseInt(singleLegScore)
-        + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 10 * 20;
+
 
     $("#flexibility").text(flexibility + "分");
     $("#flexibility").next().text(getFormatScore(flexibility));
