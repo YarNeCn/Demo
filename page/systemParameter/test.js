@@ -1973,9 +1973,6 @@ function echart() {
 function echart2() {
     var myChart = echarts.init(document.getElementById('main'));
     option = {
-        title: {
-            text: '综合评定分析'
-        },
         tooltip: {
             trigger: 'axis'
         },
