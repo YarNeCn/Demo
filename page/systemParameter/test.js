@@ -63,6 +63,7 @@ function initData() {
     echart2();
 
 }
+
 // 0 男 1 女
 function getSex() {
     if (sex === '男') {
@@ -84,7 +85,7 @@ function getScope() {
     singleLegScore = getSingleLeg();
 
     $("#username").text(name);
-    $("#userage").text(age);
+    $("#userage").text(age + "岁");
     $("#usersex").text(sex);
     $("#usergarden").text(garden);
     $("#userclass").text(classR);
@@ -94,7 +95,7 @@ function getScope() {
     $("#longJumpScore").text(parseFloat(longJump).toFixed(2) + " cm");
     $("#longJumpScore").next().text(longJumpScore + " 分");
 
-    if(age>=5){
+    if (age >= 5) {
         $("#oneJumpScore").text(parseFloat(oneJump).toFixed(2) + " s");
         $("#oneJumpScore").next().text(oneJumpScore + " 分");
     }
@@ -103,7 +104,7 @@ function getScope() {
     $("#twoJumpScore").text(parseFloat(twoJump).toFixed(2) + " s");
     $("#twoJumpScore").next().text(twoJumpScore + " 分");
 
-    $("#bodyFlexionScore").text(parseFloat(bodyFlexion).toFixed(2) + " s");
+    $("#bodyFlexionScore").text(parseFloat(bodyFlexion).toFixed(2) + " cm");
     $("#bodyFlexionScore").next().text(bodyFlexionScore + " 分");
 
 
@@ -122,24 +123,24 @@ function getScope() {
 
     flexibility = bodyFlexionScore * 20;
     upperLimbStrength = (parseInt(throwScore) + parseInt(handsUpScore)) / 2 * 20;
-    if(age>=5){
+    if (age >= 5) {
         lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore)) / 4 * 20;
         sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore) + parseInt(singleLegScore)
             + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 9 * 20;
-    }else{
-        lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore)  + parseInt(twoJumpScore)) / 3 * 20;
-        sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore)  + parseInt(twoJumpScore) + parseInt(singleLegScore)
+    } else {
+        lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(twoJumpScore)) / 3 * 20;
+        sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore) + parseInt(twoJumpScore) + parseInt(singleLegScore)
             + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 8 * 20;
         $("#oneJumpDiv").remove();
     }
 
     balanceAbility = (parseInt(balanceScore) + parseInt(singleLegScore)) / 2 * 20;
 
-    flexibility=flexibility.toFixed(0);
-    upperLimbStrength=upperLimbStrength.toFixed(0);
-    lowerLimbStrength=lowerLimbStrength.toFixed(0);
-    sensitiveQuality=sensitiveQuality.toFixed(0);
-    balanceAbility=balanceAbility.toFixed(0);
+    flexibility = flexibility.toFixed(0);
+    upperLimbStrength = upperLimbStrength.toFixed(0);
+    lowerLimbStrength = lowerLimbStrength.toFixed(0);
+    sensitiveQuality = sensitiveQuality.toFixed(0);
+    balanceAbility = balanceAbility.toFixed(0);
 
     $("#flexibility").text(flexibility + "分");
     $("#flexibility").next().text(getFormatScore(flexibility));
@@ -1738,6 +1739,7 @@ function getSingleLeg() {
         }
     }
 }
+
 //综合评定分
 function getFormatScore(temp) {
     if (parseInt(temp) >= 80) {
@@ -1759,7 +1761,7 @@ function getFormatScoreLM(temp) {
         return "表现优秀  望继续保持。";
     } else if (parseInt(temp) <= 79 && parseInt(temp) >= 60) {
         return "表现良好  望继续保持。";
-    } else{
+    } else {
         return "需进行综合性全面练习。";
     }
 }
@@ -1857,7 +1859,7 @@ function getTNEvaluation() {
         Dtemp += "双手正撑、";
     }
     if (Dtemp != "") {
-        str += '<li><span style="font-weight: bold">'+Dtemp.substr(0, Dtemp.length - 1)+'</span>分数略低，该幼儿还需努力并加强相应项目练习</li>';
+        str += '<li><span style="font-weight: bold">' + Dtemp.substr(0, Dtemp.length - 1) + '</span>分数略低，该幼儿还需努力并加强相应项目练习</li>';
     }
 
     var XLnengli = "";
@@ -1881,26 +1883,26 @@ function getTNEvaluation() {
 
 function getActivityPlan() {
     var XLnengli = "";
-    var temp="";
+    var temp = "";
     if (flexibility < 60) {
         XLnengli += '<li>前滚翻、足跟竞走、劈叉排球</li>';
-        temp+="柔韧性、";
+        temp += "柔韧性、";
     }
     if (upperLimbStrength < 60) {
         XLnengli += '<li>跳马、投掷、正撑拉车</li>';
-        temp+="上肢力量、";
+        temp += "上肢力量、";
     }
     if (lowerLimbStrength < 60) {
         XLnengli += '<li>青蛙屈膝跳、仰卧蹬球、慢跑</li>';
-        temp+="下肢力量、";
+        temp += "下肢力量、";
     }
     if (balanceAbility < 60) {
         XLnengli += '<li>单脚跳、闭眼单足立、走平衡木</li>';
-        temp+="平衡能力、";
+        temp += "平衡能力、";
     }
-    if(XLnengli==""){
+    if (XLnengli == "") {
         XLnengli += '<li>该幼儿各项测试均达标，体能发展较为正常。在下学期，望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
-    }else{
+    } else {
         XLnengli += '<li>在下学期，我们将针对该幼儿的<span style="font-weight: bold">' + temp.substr(0, XLnengli.length - 1) + '</span>进行着重训练。</li>';
         XLnengli += '<li>望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
         $("#ActivityPlan").html(XLnengli);
@@ -1970,6 +1972,7 @@ function echart() {
         download("#reportContent");
     }, 500)
 }
+
 function echart2() {
     var myChart = echarts.init(document.getElementById('main'));
     option = {
@@ -1986,7 +1989,19 @@ function echart2() {
                     {name: '上肢力量', max: 100}
                 ],
                 center: ['40%', '55%'],
-                radius: 150
+                radius: 150,
+                splitLine: {
+                    lineStyle: {
+                        width: 4,
+                        color: '#080808' // 图表背景网格线的颜色
+                    }
+                },
+                axisLine: {
+                    lineStyle: {
+                        width: 4,
+                        color: '#080808'
+                    }
+                }
             }
         ],
         series: [
@@ -1995,13 +2010,26 @@ function echart2() {
                 tooltip: {
                     trigger: 'item'
                 },
-                itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                itemStyle: {normal: {color : "#080808",areaStyle: {type: 'default'},lineStyle: {color:"white"
+                            // 图表中各个图区域的边框线颜色
+                            }}},
                 data: [
                     {
                         value: [flexibility, sensitiveQuality, balanceAbility, lowerLimbStrength, upperLimbStrength],
                         name: '综合评定分析'
                     }
-                ]
+                ],
+                itemStyle: {
+                    normal: {
+                        areaStyle: {
+                            type: 'default',
+                            opacity: 0.8, // 图表中各个图区域的透明度
+                            color: "#ed9578" // 图表中各个图区域的颜色
+                        }
+
+                    }
+
+                },
             }
         ]
     };
@@ -2009,9 +2037,9 @@ function echart2() {
     //使用制定的配置项和数据显示图表
     myChart.setOption(option);
 
-    setTimeout(function () {
-        download("#reportContent");
-    }, 500)
+       setTimeout(function () {
+           download("#reportContent");
+       }, 500)
 }
 
 
