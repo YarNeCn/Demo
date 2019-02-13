@@ -1988,7 +1988,7 @@ function echart2() {
                     {name: '下肢力量', max: 100},
                     {name: '上肢力量', max: 100}
                 ],
-                center: ['40%', '55%'],
+                center: ['50%', '55%'],
                 radius: 150,
                 splitLine: {
                     lineStyle: {
