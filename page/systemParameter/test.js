@@ -157,11 +157,11 @@ function getScope() {
 function getRun() {
     if (getSex() === 0) {
         if (age === '3') {
-            if (parseFloat(run) < 8.0) {
+            if (parseFloat(run).toFixed(1) < 8.0) {
                 return 5;
-            } else if (parseFloat(run) >= 8.0 && parseFloat(run) <= 9.0) {
+            } else if (parseFloat(run).toFixed(1) >= 8.0 && parseFloat(run).toFixed(1) <= 9.0) {
                 return 4;
-            } else if (parseFloat(run) >= 9.1 && parseFloat(run) <= 10.2) {
+            } else if (parseFloat(run).toFixed(1) >= 9.1 && parseFloat(run) <= 10.2) {
                 return 3;
             } else if (parseFloat(run) >= 10.3 && parseFloat(run) <= 12.8) {
                 return 2;
@@ -1749,20 +1749,24 @@ function getFormatScore(temp) {
     } else if (parseInt(temp) <= 59 && parseInt(temp) >= 40) {
         return "表现正常, 望继续保持，并进行针对性的长期练习。";
     } else if (parseInt(temp) <= 39 && parseInt(temp) >= 20) {
-        return "发展较弱, 需进行针对性的长期练习。";
-    } else if (parseInt(temp) < 20) {
+        return "发展稍弱, 需进行针对性的长期练习。";
+    }else if (parseInt(temp) <20) {
         return "发展较弱, 需进行针对性的长期练习。";
     }
 }
 
 //综合评定分
 function getFormatScoreLM(temp) {
-    if (parseInt(temp >= 80)) {
+    if (parseInt(temp) >= 80) {
         return "表现优秀, 望继续保持。";
     } else if (parseInt(temp) <= 79 && parseInt(temp) >= 60) {
         return "表现良好, 望继续保持。";
-    } else {
-        return "需进行综合性全面练习。";
+    } else if (parseInt(temp) <= 59 && parseInt(temp) >= 40) {
+        return "表现正常, 望继续保持，并进行综合性全面练习。";
+    } else if (parseInt(temp) <= 39 && parseInt(temp) >= 20) {
+        return "表现稍弱，需进行综合性全面练习。";
+    }else if (parseInt(temp) <20) {
+        return "表现较弱，需进行综合性全面练习。";
     }
 }
 
@@ -1864,7 +1868,6 @@ function getTNEvaluation() {
     if (HGtemp != "") {
         str += '<li><span style="font-weight: bold">' + HGtemp.substr(0, HGtemp.length - 1) + '</span>达到合格水平</li>';
     }
-
 
 
     var Dtemp = "";
@@ -2048,9 +2051,14 @@ function echart2() {
                 tooltip: {
                     trigger: 'item'
                 },
-                itemStyle: {normal: {color : "#080808",areaStyle: {type: 'default'},lineStyle: {color:"white"
+                itemStyle: {
+                    normal: {
+                        color: "#080808", areaStyle: {type: 'default'}, lineStyle: {
+                            color: "white"
                             // 图表中各个图区域的边框线颜色
-                            }}},
+                        }
+                    }
+                },
                 data: [
                     {
                         value: [flexibility, sensitiveQuality, balanceAbility, lowerLimbStrength, upperLimbStrength],
@@ -2075,9 +2083,9 @@ function echart2() {
     //使用制定的配置项和数据显示图表
     myChart.setOption(option);
 
-       setTimeout(function () {
-           download("#reportContent");
-       }, 500)
+    setTimeout(function () {
+        download("#reportContent");
+    }, 500)
 }
 
 
