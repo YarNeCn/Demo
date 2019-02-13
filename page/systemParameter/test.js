@@ -1769,36 +1769,70 @@ function getFormatScoreLM(temp) {
 function getTNEvaluation() {
     var str = '<li>从测试各项测试结果来看，' + name + '小朋友:</li>';
     var YXtemp = "";
-    if (parseInt(runScore) >= 4) {
+    if (parseInt(runScore) > 4) {
         YXtemp += "十米往返跑、";
     }
-    if (parseInt(longJumpScore) >= 4) {
+    if (parseInt(longJumpScore) > 4) {
         YXtemp += "立定跳远、";
     }
-    if (parseInt(throwScore) >= 4) {
+    if (parseInt(throwScore) > 4) {
         YXtemp += "网球投掷、";
     }
-    if (parseInt(twoJumpScore) >= 4) {
+    if (parseInt(twoJumpScore) > 4) {
         YXtemp += "双脚连续跳、";
     }
-    if (parseInt(oneJumpScore) >= 4) {
+    if (parseInt(oneJumpScore) > 4) {
         YXtemp += "单脚连续跳、";
     }
-    if (parseInt(balanceScore) >= 4) {
+    if (parseInt(balanceScore) > 4) {
         YXtemp += "走平衡木、";
     }
-    if (parseInt(singleLegScore) >= 4) {
+    if (parseInt(singleLegScore) > 4) {
         YXtemp += "闭眼单足立、";
     }
-    if (parseInt(bodyFlexionScore) >= 4) {
+    if (parseInt(bodyFlexionScore) > 4) {
         YXtemp += "坐位体前屈、";
     }
-    if (parseInt(handsUpScore) >= 4) {
+    if (parseInt(handsUpScore) > 4) {
         YXtemp += "双手正撑、";
     }
     if (YXtemp != "") {
         str += '<li><span style="font-weight: bold">' + YXtemp.substr(0, YXtemp.length - 1) + '</span>达到优秀水平</li>';
     }
+
+
+    var LHtemp = "";
+    if (parseInt(runScore) == 4) {
+        LHtemp += "十米往返跑、";
+    }
+    if (parseInt(longJumpScore) == 4) {
+        LHtemp += "立定跳远、";
+    }
+    if (parseInt(throwScore) == 4) {
+        LHtemp += "网球投掷、";
+    }
+    if (parseInt(twoJumpScore) == 4) {
+        LHtemp += "双脚连续跳、";
+    }
+    if (parseInt(oneJumpScore) == 4) {
+        LHtemp += "单脚连续跳、";
+    }
+    if (parseInt(balanceScore) == 4) {
+        LHtemp += "走平衡木、";
+    }
+    if (parseInt(singleLegScore) == 4) {
+        LHtemp += "闭眼单足立、";
+    }
+    if (parseInt(bodyFlexionScore) == 4) {
+        LHtemp += "坐位体前屈、";
+    }
+    if (parseInt(handsUpScore) == 4) {
+        LHtemp += "双手正撑、";
+    }
+    if (LHtemp != "") {
+        str += '<li><span style="font-weight: bold">' + LHtemp.substr(0, LHtemp.length - 1) + '</span>达到良好水平</li>';
+    }
+
     var HGtemp = "";
     if (parseInt(runScore) == 3) {
         HGtemp += "十米往返跑、";
@@ -1830,6 +1864,9 @@ function getTNEvaluation() {
     if (HGtemp != "") {
         str += '<li><span style="font-weight: bold">' + HGtemp.substr(0, HGtemp.length - 1) + '</span>达到合格水平</li>';
     }
+
+
+
     var Dtemp = "";
     if (parseInt(runScore) <= 2) {
         Dtemp += "十米往返跑、";
