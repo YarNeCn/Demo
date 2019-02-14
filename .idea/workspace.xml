@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4602b459-d9ac-4596-aee5-e49a41f0ce57" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/systemParameter/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/systemParameter/test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="1368" column="42" selection-start-line="1368" selection-start-column="23" selection-end-line="1368" selection-end-column="42" />
+            <state relative-caret-position="423">
+              <caret line="1758" column="33" lean-forward="true" selection-start-line="1758" selection-start-column="33" selection-end-line="1758" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
@@ -87,7 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>oneJump</find>
       <find>singleLegScore</find>
       <find>throwR</find>
       <find>网球投掷</find>
@@ -117,6 +115,7 @@
       <find>ActivityPlan</find>
       <find>sensitiveQuality</find>
       <find>parseFloat(run)</find>
+      <find>parseFloat(twoJump)</find>
     </findStrings>
     <replaceStrings>
       <replace>LHtemp</replace>
@@ -403,7 +402,7 @@
       <workItem from="1550052525263" duration="24000" />
       <workItem from="1550054672102" duration="2508000" />
       <workItem from="1550109522950" duration="123000" />
-      <workItem from="1550142793763" duration="1034000" />
+      <workItem from="1550142793763" duration="1365000" />
     </task>
     <task id="LOCAL-00001" summary="修改页面样式">
       <created>1549616537233</created>
@@ -458,7 +457,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30642000" />
+    <option name="totallyTimeSpent" value="30973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -989,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="1368" column="42" selection-start-line="1368" selection-start-column="23" selection-end-line="1368" selection-end-column="42" />
+        <state relative-caret-position="423">
+          <caret line="1758" column="33" lean-forward="true" selection-start-line="1758" selection-start-column="33" selection-end-line="1758" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />

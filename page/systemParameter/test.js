@@ -1747,7 +1747,7 @@ function getFormatScore(temp) {
     } else if (parseInt(temp) <= 79 && parseInt(temp) >= 60) {
         return "表现良好, 望继续保持。";
     } else if (parseInt(temp) <= 59 && parseInt(temp) >= 40) {
-        return "表现正常, 望继续保持，并进行针对性的长期练习。";
+        return "表现正常, 有待进一步提高，并进行针对性的长期练习。";
     } else if (parseInt(temp) <= 39 && parseInt(temp) >= 20) {
         return "发展稍弱, 需进行针对性的长期练习。";
     }else if (parseInt(temp) <20) {
@@ -1762,7 +1762,7 @@ function getFormatScoreLM(temp) {
     } else if (parseInt(temp) <= 79 && parseInt(temp) >= 60) {
         return "表现良好, 望继续保持。";
     } else if (parseInt(temp) <= 59 && parseInt(temp) >= 40) {
-        return "表现正常, 望继续保持，并进行综合性全面练习。";
+        return "表现正常, 有待进一步提高，并进行综合性全面练习。";
     } else if (parseInt(temp) <= 39 && parseInt(temp) >= 20) {
         return "表现稍弱，需进行综合性全面练习。";
     }else if (parseInt(temp) <20) {
