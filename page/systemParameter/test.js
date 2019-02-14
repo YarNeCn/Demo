@@ -89,36 +89,36 @@ function getScope() {
     $("#usersex").text(sex);
     $("#usergarden").text(garden);
     $("#userclass").text(classR);
-    $("#runScope").text(parseFloat(run).toFixed(2) + " s");
+    $("#runScope").text(parseFloat(run).toFixed(1) + " s");
     $("#runScope").next().text(runScore + " 分");
 
-    $("#longJumpScore").text(parseFloat(longJump).toFixed(2) + " cm");
+    $("#longJumpScore").text(parseFloat(longJump).toFixed(1) + " cm");
     $("#longJumpScore").next().text(longJumpScore + " 分");
 
     if (age >= 5) {
-        $("#oneJumpScore").text(parseFloat(oneJump).toFixed(2) + " s");
+        $("#oneJumpScore").text(parseFloat(oneJump).toFixed(1) + " s");
         $("#oneJumpScore").next().text(oneJumpScore + " 分");
     }
 
 
-    $("#twoJumpScore").text(parseFloat(twoJump).toFixed(2) + " s");
+    $("#twoJumpScore").text(parseFloat(twoJump).toFixed(1) + " s");
     $("#twoJumpScore").next().text(twoJumpScore + " 分");
 
-    $("#bodyFlexionScore").text(parseFloat(bodyFlexion).toFixed(2) + " cm");
+    $("#bodyFlexionScore").text(parseFloat(bodyFlexion).toFixed(1) + " cm");
     $("#bodyFlexionScore").next().text(bodyFlexionScore + " 分");
 
 
-    $("#balanceScore").text(parseFloat(balance).toFixed(2) + " s");
+    $("#balanceScore").text(parseFloat(balance).toFixed(1) + " s");
     $("#balanceScore").next().text(balanceScore + " 分");
 
 
-    $("#throwScore").text(parseFloat(throwR).toFixed(2) + " m");
+    $("#throwScore").text(parseFloat(throwR).toFixed(1) + " m");
     $("#throwScore").next().text(throwScore + " 分");
 
-    $("#handsUpScore").text(parseFloat(handsUp).toFixed(2) + " s");
+    $("#handsUpScore").text(parseFloat(handsUp).toFixed(1) + " s");
     $("#handsUpScore").next().text(handsUpScore + " 分");
 
-    $("#singleLegScore").text(parseFloat(singleLeg).toFixed(2) + " s");
+    $("#singleLegScore").text(parseFloat(singleLeg).toFixed(1) + " s");
     $("#singleLegScore").next().text(singleLegScore + " 分");
 
     flexibility = bodyFlexionScore * 20;
@@ -1390,173 +1390,173 @@ function getTwoJump() {
 function gethandsUp() {
     if (getSex() === 0) {
         if (age === '3') {
-            if (parseInt(handsUp) > 40) {
+            if (parseFloat(handsUp).toFixed(0) > 40) {
                 return 5;
-            } else if (parseInt(handsUp) <= 40 && parseInt(handsUp) >= 19) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 40 && parseFloat(handsUp).toFixed(0) >= 19) {
                 return 4;
-            } else if (parseInt(handsUp) <= 18 && parseInt(handsUp) >= 7) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 18 && parseFloat(handsUp).toFixed(0) >= 7) {
                 return 3;
-            } else if (parseInt(handsUp) <= 6 && parseInt(handsUp) >= 2) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 6 && parseFloat(handsUp).toFixed(0) >= 2) {
                 return 2;
-            } else if (parseInt(handsUp) < 2) {
+            } else if (parseFloat(handsUp).toFixed(0) < 2) {
                 return 1;
             }
         } else if (age === '3.5') {
-            if (parseInt(handsUp) > 60) {
+            if (parseFloat(handsUp).toFixed(0) > 60) {
                 return 5;
-            } else if (parseInt(handsUp) <= 60 && parseInt(handsUp) >= 30) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 60 && parseFloat(handsUp).toFixed(0) >= 30) {
                 return 4;
-            } else if (parseInt(handsUp) <= 29 && parseInt(handsUp) >= 12) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 29 && parseFloat(handsUp).toFixed(0) >= 12) {
                 return 3;
-            } else if (parseInt(handsUp) <= 11 && parseInt(handsUp) >= 4) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 11 && parseFloat(handsUp).toFixed(0) >= 4) {
                 return 2;
-            } else if (parseInt(handsUp) < 4) {
+            } else if (parseFloat(handsUp).toFixed(0) < 4) {
                 return 1;
             }
         } else if (age === '4') {
-            if (parseInt(handsUp) > 73) {
+            if (parseFloat(handsUp).toFixed(0) > 73) {
                 return 5;
-            } else if (parseInt(handsUp) <= 73 && parseInt(handsUp) >= 38) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 73 && parseFloat(handsUp).toFixed(0) >= 38) {
                 return 4;
-            } else if (parseInt(handsUp) <= 37 && parseInt(handsUp) >= 17) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 37 && parseFloat(handsUp).toFixed(0) >= 17) {
                 return 3;
-            } else if (parseInt(handsUp) <= 16 && parseInt(handsUp) >= 5) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 16 && parseFloat(handsUp).toFixed(0) >= 5) {
                 return 2;
-            } else if (parseInt(handsUp) < 5) {
+            } else if (parseFloat(handsUp).toFixed(0) < 5) {
                 return 1;
             }
         } else if (age === '4.5') {
-            if (parseInt(handsUp) > 108) {
+            if (parseFloat(handsUp).toFixed(0) > 108) {
                 return 5;
-            } else if (parseInt(handsUp) <= 108 && parseInt(handsUp) >= 54) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 108 && parseFloat(handsUp).toFixed(0) >= 54) {
                 return 4;
-            } else if (parseInt(handsUp) <= 53 && parseInt(handsUp) >= 25) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 53 && parseFloat(handsUp).toFixed(0) >= 25) {
                 return 3;
-            } else if (parseInt(handsUp) <= 24 && parseInt(handsUp) >= 9) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 24 && parseFloat(handsUp).toFixed(0) >= 9) {
                 return 2;
-            } else if (parseInt(handsUp) < 9) {
+            } else if (parseFloat(handsUp).toFixed(0) < 9) {
                 return 1;
             }
         } else if (age === '5') {
-            if (parseInt(handsUp) > 125) {
+            if (parseFloat(handsUp).toFixed(0) > 125) {
                 return 5;
-            } else if (parseInt(handsUp) <= 125 && parseInt(handsUp) >= 64) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 125 && parseFloat(handsUp).toFixed(0) >= 64) {
                 return 4;
-            } else if (parseInt(handsUp) <= 63 && parseInt(handsUp) >= 31) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 63 && parseFloat(handsUp).toFixed(0) >= 31) {
                 return 3;
-            } else if (parseInt(handsUp) <= 30 && parseInt(handsUp) >= 11) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 30 && parseFloat(handsUp).toFixed(0) >= 11) {
                 return 2;
-            } else if (parseInt(handsUp) < 11) {
+            } else if (parseFloat(handsUp).toFixed(0) < 11) {
                 return 1;
             }
         } else if (age === '5.5') {
-            if (parseInt(handsUp) > 153) {
+            if (parseFloat(handsUp).toFixed(0) > 153) {
                 return 5;
-            } else if (parseInt(handsUp) <= 153 && parseInt(handsUp) >= 76) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 153 && parseFloat(handsUp).toFixed(0) >= 76) {
                 return 4;
-            } else if (parseInt(handsUp) <= 75 && parseInt(handsUp) >= 36) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 75 && parseFloat(handsUp).toFixed(0) >= 36) {
                 return 3;
-            } else if (parseInt(handsUp) <= 35 && parseInt(handsUp) >= 14) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 35 && parseFloat(handsUp).toFixed(0) >= 14) {
                 return 2;
-            } else if (parseInt(handsUp) < 14) {
+            } else if (parseFloat(handsUp).toFixed(0) < 14) {
                 return 1;
             }
         } else if (age === '6') {
-            if (parseInt(handsUp) > 163) {
+            if (parseFloat(handsUp).toFixed(0) > 163) {
                 return 5;
-            } else if (parseInt(handsUp) <= 163 && parseInt(handsUp) >= 86) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 163 && parseFloat(handsUp).toFixed(0) >= 86) {
                 return 4;
-            } else if (parseInt(handsUp) <= 85 && parseInt(handsUp) >= 41) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 85 && parseFloat(handsUp).toFixed(0) >= 41) {
                 return 3;
-            } else if (parseInt(handsUp) <= 40 && parseInt(handsUp) >= 17) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 40 && parseFloat(handsUp).toFixed(0) >= 17) {
                 return 2;
-            } else if (parseInt(handsUp) < 17) {
+            } else if (parseFloat(handsUp).toFixed(0) < 17) {
                 return 1;
             }
         }
     } else {
         if (age === '3') {
-            if (parseInt(handsUp) > 41) {
+            if (parseFloat(handsUp).toFixed(0) > 41) {
                 return 5;
-            } else if (parseInt(handsUp) <= 41 && parseInt(handsUp) >= 19) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 41 && parseFloat(handsUp).toFixed(0) >= 19) {
                 return 4;
-            } else if (parseInt(handsUp) <= 18 && parseInt(handsUp) >= 7) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 18 && parseFloat(handsUp).toFixed(0) >= 7) {
                 return 3;
-            } else if (parseInt(handsUp) <= 6 && parseInt(handsUp) >= 2) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 6 && parseFloat(handsUp).toFixed(0) >= 2) {
                 return 2;
-            } else if (parseInt(handsUp) < 2) {
+            } else if (parseFloat(handsUp).toFixed(0) < 2) {
                 return 1;
             }
         } else if (age === '3.5') {
-            if (parseInt(handsUp) > 61) {
+            if (parseFloat(handsUp).toFixed(0) > 61) {
                 return 5;
-            } else if (parseInt(handsUp) <= 61 && parseInt(handsUp) >= 29) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 61 && parseFloat(handsUp).toFixed(0) >= 29) {
                 return 4;
-            } else if (parseInt(handsUp) <= 28 && parseInt(handsUp) >= 12) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 28 && parseFloat(handsUp).toFixed(0) >= 12) {
                 return 3;
-            } else if (parseInt(handsUp) <= 11 && parseInt(handsUp) >= 4) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 11 && parseFloat(handsUp).toFixed(0) >= 4) {
                 return 2;
-            } else if (parseInt(handsUp) < 4) {
+            } else if (parseFloat(handsUp).toFixed(0) < 4) {
                 return 1;
             }
         } else if (age === '4') {
-            if (parseInt(handsUp) > 77) {
+            if (parseFloat(handsUp).toFixed(0) > 77) {
                 return 5;
-            } else if (parseInt(handsUp) <= 77 && parseInt(handsUp) >= 36) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 77 && parseFloat(handsUp).toFixed(0) >= 36) {
                 return 4;
-            } else if (parseInt(handsUp) <= 35 && parseInt(handsUp) >= 16) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 35 && parseFloat(handsUp).toFixed(0) >= 16) {
                 return 3;
-            } else if (parseInt(handsUp) <= 15 && parseInt(handsUp) >= 5) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 15 && parseFloat(handsUp).toFixed(0) >= 5) {
                 return 2;
-            } else if (parseInt(handsUp) < 5) {
+            } else if (parseFloat(handsUp).toFixed(0) < 5) {
                 return 1;
             }
         } else if (age === '4.5') {
-            if (parseInt(handsUp) > 102) {
+            if (parseFloat(handsUp).toFixed(0) > 102) {
                 return 5;
-            } else if (parseInt(handsUp) <= 102 && parseInt(handsUp) >= 53) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 102 && parseFloat(handsUp).toFixed(0) >= 53) {
                 return 4;
-            } else if (parseInt(handsUp) <= 52 && parseInt(handsUp) >= 25) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 52 && parseFloat(handsUp).toFixed(0) >= 25) {
                 return 3;
-            } else if (parseInt(handsUp) <= 24 && parseInt(handsUp) >= 9) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 24 && parseFloat(handsUp).toFixed(0) >= 9) {
                 return 2;
-            } else if (parseInt(handsUp) < 9) {
+            } else if (parseFloat(handsUp).toFixed(0) < 9) {
                 return 1;
             }
         } else if (age === '5') {
-            if (parseInt(handsUp) > 125) {
+            if (parseFloat(handsUp).toFixed(0) > 125) {
                 return 5;
-            } else if (parseInt(handsUp) <= 125 && parseInt(handsUp) >= 64) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 125 && parseFloat(handsUp).toFixed(0) >= 64) {
                 return 4;
-            } else if (parseInt(handsUp) <= 63 && parseInt(handsUp) >= 32) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 63 && parseFloat(handsUp).toFixed(0) >= 32) {
                 return 3;
-            } else if (parseInt(handsUp) <= 31 && parseInt(handsUp) >= 13) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 31 && parseFloat(handsUp).toFixed(0) >= 13) {
                 return 2;
-            } else if (parseInt(handsUp) < 13) {
+            } else if (parseFloat(handsUp).toFixed(0) < 13) {
                 return 1;
             }
         } else if (age === '5.5') {
-            if (parseInt(handsUp) > 138) {
+            if (parseFloat(handsUp).toFixed(0) > 138) {
                 return 5;
-            } else if (parseInt(handsUp) <= 138 && parseInt(handsUp) >= 68) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 138 && parseFloat(handsUp).toFixed(0) >= 68) {
                 return 4;
-            } else if (parseInt(handsUp) <= 67 && parseInt(handsUp) >= 35) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 67 && parseFloat(handsUp).toFixed(0) >= 35) {
                 return 3;
-            } else if (parseInt(handsUp) <= 34 && parseInt(handsUp) >= 15) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 34 && parseFloat(handsUp).toFixed(0) >= 15) {
                 return 2;
-            } else if (parseInt(handsUp) < 15) {
+            } else if (parseFloat(handsUp).toFixed(0) < 15) {
                 return 1;
             }
         } else if (age === '6') {
-            if (parseInt(handsUp) > 148) {
+            if (parseFloat(handsUp).toFixed(0) > 148) {
                 return 5;
-            } else if (parseInt(handsUp) <= 148 && parseInt(handsUp) >= 72) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 148 && parseFloat(handsUp).toFixed(0) >= 72) {
                 return 4;
-            } else if (parseInt(handsUp) <= 71 && parseInt(handsUp) >= 38) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 71 && parseFloat(handsUp).toFixed(0) >= 38) {
                 return 3;
-            } else if (parseInt(handsUp) <= 37 && parseInt(handsUp) >= 17) {
+            } else if (parseFloat(handsUp).toFixed(0) <= 37 && parseFloat(handsUp).toFixed(0) >= 17) {
                 return 2;
-            } else if (parseInt(handsUp) < 17) {
+            } else if (parseFloat(handsUp).toFixed(0) < 17) {
                 return 1;
             }
         }
@@ -1565,175 +1565,176 @@ function gethandsUp() {
 }
 
 function getSingleLeg() {
+
     if (getSex() === 0) {
         if (age === '3') {
-            if (parseInt(singleLeg) > 20) {
+            if (parseFloat(singleLeg).toFixed(0) > 20) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 20 && parseInt(singleLeg) >= 11) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 20 && parseFloat(singleLeg).toFixed(0) >= 11) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 10 && parseInt(singleLeg) >= 7) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 10 && parseFloat(singleLeg).toFixed(0) >= 7) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 6 && parseInt(singleLeg) >= 2) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 6 && parseFloat(singleLeg).toFixed(0) >= 2) {
                 return 2;
-            } else if (parseInt(singleLeg) < 2) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 2) {
                 return 1;
             }
         } else if (age === '3.5') {
-            if (parseInt(singleLeg) > 40) {
+            if (parseFloat(singleLeg).toFixed(0) > 40) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 40 && parseInt(singleLeg) >= 23) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 40 && parseFloat(singleLeg).toFixed(0) >= 23) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 22 && parseInt(singleLeg) >= 12) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 22 && parseFloat(singleLeg).toFixed(0) >= 12) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 11 && parseInt(singleLeg) >= 4) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 11 && parseFloat(singleLeg).toFixed(0) >= 4) {
                 return 2;
-            } else if (parseInt(singleLeg) < 4) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 4) {
                 return 1;
             }
         } else if (age === '4') {
-            if (parseInt(singleLeg) > 54) {
+            if (parseFloat(singleLeg).toFixed(0) > 54) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 53 && parseInt(singleLeg) >= 38) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 53 && parseFloat(singleLeg).toFixed(0) >= 38) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 37 && parseInt(singleLeg) >= 16) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 37 && parseFloat(singleLeg).toFixed(0) >= 16) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 15 && parseInt(singleLeg) >= 5) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 15 && parseFloat(singleLeg).toFixed(0) >= 5) {
                 return 2;
-            } else if (parseInt(singleLeg) < 5) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 5) {
                 return 1;
             }
         } else if (age === '4.5') {
-            if (parseInt(singleLeg) > 68) {
+            if (parseFloat(singleLeg).toFixed(0) > 68) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 68 && parseInt(singleLeg) >= 44) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 68 && parseFloat(singleLeg).toFixed(0) >= 44) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 43 && parseInt(singleLeg) >= 25) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 43 && parseFloat(singleLeg).toFixed(0) >= 25) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 24 && parseInt(singleLeg) >= 9) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 24 && parseFloat(singleLeg).toFixed(0) >= 9) {
                 return 2;
-            } else if (parseInt(singleLeg) < 9) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 9) {
                 return 1;
             }
         } else if (age === '5') {
-            if (parseInt(singleLeg) > 85) {
+            if (parseFloat(singleLeg).toFixed(0) > 85) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 85 && parseInt(singleLeg) >= 54) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 85 && parseFloat(singleLeg).toFixed(0) >= 54) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 53 && parseInt(singleLeg) >= 31) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 53 && parseFloat(singleLeg).toFixed(0) >= 31) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 30 && parseInt(singleLeg) >= 11) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 30 && parseFloat(singleLeg).toFixed(0) >= 11) {
                 return 2;
-            } else if (parseInt(singleLeg) < 11) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 11) {
                 return 1;
             }
         } else if (age === '5.5') {
-            if (parseInt(singleLeg) > 93) {
+            if (parseFloat(singleLeg).toFixed(0) > 93) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 93 && parseInt(singleLeg) >= 66) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 93 && parseFloat(singleLeg).toFixed(0) >= 66) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 65 && parseInt(singleLeg) >= 36) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 65 && parseFloat(singleLeg).toFixed(0) >= 36) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 35 && parseInt(singleLeg) >= 14) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 35 && parseFloat(singleLeg).toFixed(0) >= 14) {
                 return 2;
-            } else if (parseInt(singleLeg) < 14) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 14) {
                 return 1;
             }
         } else if (age === '6') {
-            if (parseInt(singleLeg) > 103) {
+            if (parseFloat(singleLeg).toFixed(0) > 103) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 103 && parseInt(singleLeg) >= 76) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 103 && parseFloat(singleLeg).toFixed(0) >= 76) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 75 && parseInt(singleLeg) >= 41) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 75 && parseFloat(singleLeg).toFixed(0) >= 41) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 40 && parseInt(singleLeg) >= 17) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 40 && parseFloat(singleLeg).toFixed(0) >= 17) {
                 return 2;
-            } else if (parseInt(singleLeg) < 17) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 17) {
                 return 1;
             }
         }
     } else {
         if (age === '3') {
-            if (parseInt(singleLeg) > 21) {
+            if (parseFloat(singleLeg).toFixed(0) > 21) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 21 && parseInt(singleLeg) >= 11) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 21 && parseFloat(singleLeg).toFixed(0) >= 11) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 10 && parseInt(singleLeg) >= 7) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 10 && parseFloat(singleLeg).toFixed(0) >= 7) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 6 && parseInt(singleLeg) >= 2) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 6 && parseFloat(singleLeg).toFixed(0) >= 2) {
                 return 2;
-            } else if (parseInt(singleLeg) < 2) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 2) {
                 return 1;
             }
         } else if (age === '3.5') {
-            if (parseInt(singleLeg) > 41) {
+            if (parseFloat(singleLeg).toFixed(0) > 41) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 41 && parseInt(singleLeg) >= 21) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 41 && parseFloat(singleLeg).toFixed(0) >= 21) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 20 && parseInt(singleLeg) >= 12) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 20 && parseFloat(singleLeg).toFixed(0) >= 12) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 11 && parseInt(singleLeg) >= 4) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 11 && parseFloat(singleLeg).toFixed(0) >= 4) {
                 return 2;
-            } else if (parseInt(singleLeg) < 4) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 4) {
                 return 1;
             }
         } else if (age === '4') {
-            if (parseInt(singleLeg) > 57) {
+            if (parseFloat(singleLeg).toFixed(0) > 57) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 57 && parseInt(singleLeg) >= 36) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 57 && parseFloat(singleLeg).toFixed(0) >= 36) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 35 && parseInt(singleLeg) >= 17) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 35 && parseFloat(singleLeg).toFixed(0) >= 17) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 16 && parseInt(singleLeg) >= 5) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 16 && parseFloat(singleLeg).toFixed(0) >= 5) {
                 return 2;
-            } else if (parseInt(singleLeg) < 5) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 5) {
                 return 1;
             }
         } else if (age === '4.5') {
-            if (parseInt(singleLeg) > 62) {
+            if (parseFloat(singleLeg).toFixed(0) > 62) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 62 && parseInt(singleLeg) >= 43) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 62 && parseFloat(singleLeg).toFixed(0) >= 43) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 42 && parseInt(singleLeg) >= 25) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 42 && parseFloat(singleLeg).toFixed(0) >= 25) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 24 && parseInt(singleLeg) >= 9) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 24 && parseFloat(singleLeg).toFixed(0) >= 9) {
                 return 2;
-            } else if (parseInt(singleLeg) < 9) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 9) {
                 return 1;
             }
         } else if (age === '5') {
-            if (parseInt(singleLeg) > 71) {
+            if (parseFloat(singleLeg).toFixed(0) > 71) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 71 && parseInt(singleLeg) >= 54) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 71 && parseFloat(singleLeg).toFixed(0) >= 54) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 53 && parseInt(singleLeg) >= 31) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 53 && parseFloat(singleLeg).toFixed(0) >= 31) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 30 && parseInt(singleLeg) >= 11) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 30 && parseFloat(singleLeg).toFixed(0) >= 11) {
                 return 2;
-            } else if (parseInt(singleLeg) < 11) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 11) {
                 return 1;
             }
         } else if (age === '5.5') {
-            if (parseInt(singleLeg) > 77) {
+            if (parseFloat(singleLeg).toFixed(0) > 77) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 77 && parseInt(singleLeg) >= 64) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 77 && parseFloat(singleLeg).toFixed(0) >= 64) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 63 && parseInt(singleLeg) >= 36) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 63 && parseFloat(singleLeg).toFixed(0) >= 36) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 35 && parseInt(singleLeg) >= 14) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 35 && parseFloat(singleLeg).toFixed(0) >= 14) {
                 return 2;
-            } else if (parseInt(singleLeg) < 14) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 14) {
                 return 1;
             }
         } else if (age === '6') {
-            if (parseInt(singleLeg) > 88) {
+            if (parseFloat(singleLeg).toFixed(0) > 88) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 88 && parseInt(singleLeg) >= 66) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 88 && parseFloat(singleLeg).toFixed(0) >= 66) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 65 && parseInt(singleLeg) >= 38) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 65 && parseFloat(singleLeg).toFixed(0) >= 38) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 37 && parseInt(singleLeg) >= 17) {
+            } else if (parseFloat(singleLeg).toFixed(0) <= 37 && parseFloat(singleLeg).toFixed(0) >= 17) {
                 return 2;
-            } else if (parseInt(singleLeg) < 17) {
+            } else if (parseFloat(singleLeg).toFixed(0) < 17) {
                 return 1;
             }
         }
