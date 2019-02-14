@@ -1390,173 +1390,173 @@ function getTwoJump() {
 function gethandsUp() {
     if (getSex() === 0) {
         if (age === '3') {
-            if (parseInt(singleLeg) > 40) {
+            if (parseInt(handsUp) > 40) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 40 && parseInt(singleLeg) >= 19) {
+            } else if (parseInt(handsUp) <= 40 && parseInt(handsUp) >= 19) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 18 && parseInt(singleLeg) >= 7) {
+            } else if (parseInt(handsUp) <= 18 && parseInt(handsUp) >= 7) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 6 && parseInt(singleLeg) >= 2) {
+            } else if (parseInt(handsUp) <= 6 && parseInt(handsUp) >= 2) {
                 return 2;
-            } else if (parseInt(singleLeg) < 2) {
+            } else if (parseInt(handsUp) < 2) {
                 return 1;
             }
         } else if (age === '3.5') {
-            if (parseInt(singleLeg) > 60) {
+            if (parseInt(handsUp) > 60) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 60 && parseInt(singleLeg) >= 30) {
+            } else if (parseInt(handsUp) <= 60 && parseInt(handsUp) >= 30) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 29 && parseInt(singleLeg) >= 12) {
+            } else if (parseInt(handsUp) <= 29 && parseInt(handsUp) >= 12) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 11 && parseInt(singleLeg) >= 4) {
+            } else if (parseInt(handsUp) <= 11 && parseInt(handsUp) >= 4) {
                 return 2;
-            } else if (parseInt(singleLeg) < 4) {
+            } else if (parseInt(handsUp) < 4) {
                 return 1;
             }
         } else if (age === '4') {
-            if (parseInt(singleLeg) > 73) {
+            if (parseInt(handsUp) > 73) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 73 && parseInt(singleLeg) >= 38) {
+            } else if (parseInt(handsUp) <= 73 && parseInt(handsUp) >= 38) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 37 && parseInt(singleLeg) >= 17) {
+            } else if (parseInt(handsUp) <= 37 && parseInt(handsUp) >= 17) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 16 && parseInt(singleLeg) >= 5) {
+            } else if (parseInt(handsUp) <= 16 && parseInt(handsUp) >= 5) {
                 return 2;
-            } else if (parseInt(singleLeg) < 5) {
+            } else if (parseInt(handsUp) < 5) {
                 return 1;
             }
         } else if (age === '4.5') {
-            if (parseInt(singleLeg) > 108) {
+            if (parseInt(handsUp) > 108) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 108 && parseInt(singleLeg) >= 54) {
+            } else if (parseInt(handsUp) <= 108 && parseInt(handsUp) >= 54) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 53 && parseInt(singleLeg) >= 25) {
+            } else if (parseInt(handsUp) <= 53 && parseInt(handsUp) >= 25) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 24 && parseInt(singleLeg) >= 9) {
+            } else if (parseInt(handsUp) <= 24 && parseInt(handsUp) >= 9) {
                 return 2;
-            } else if (parseInt(singleLeg) < 9) {
+            } else if (parseInt(handsUp) < 9) {
                 return 1;
             }
         } else if (age === '5') {
-            if (parseInt(singleLeg) > 125) {
+            if (parseInt(handsUp) > 125) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 125 && parseInt(singleLeg) >= 64) {
+            } else if (parseInt(handsUp) <= 125 && parseInt(handsUp) >= 64) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 63 && parseInt(singleLeg) >= 31) {
+            } else if (parseInt(handsUp) <= 63 && parseInt(handsUp) >= 31) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 30 && parseInt(singleLeg) >= 11) {
+            } else if (parseInt(handsUp) <= 30 && parseInt(handsUp) >= 11) {
                 return 2;
-            } else if (parseInt(singleLeg) < 11) {
+            } else if (parseInt(handsUp) < 11) {
                 return 1;
             }
         } else if (age === '5.5') {
-            if (parseInt(singleLeg) > 153) {
+            if (parseInt(handsUp) > 153) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 153 && parseInt(singleLeg) >= 76) {
+            } else if (parseInt(handsUp) <= 153 && parseInt(handsUp) >= 76) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 75 && parseInt(singleLeg) >= 36) {
+            } else if (parseInt(handsUp) <= 75 && parseInt(handsUp) >= 36) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 35 && parseInt(singleLeg) >= 14) {
+            } else if (parseInt(handsUp) <= 35 && parseInt(handsUp) >= 14) {
                 return 2;
-            } else if (parseInt(singleLeg) < 14) {
+            } else if (parseInt(handsUp) < 14) {
                 return 1;
             }
         } else if (age === '6') {
-            if (parseInt(singleLeg) > 163) {
+            if (parseInt(handsUp) > 163) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 163 && parseInt(singleLeg) >= 86) {
+            } else if (parseInt(handsUp) <= 163 && parseInt(handsUp) >= 86) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 85 && parseInt(singleLeg) >= 41) {
+            } else if (parseInt(handsUp) <= 85 && parseInt(handsUp) >= 41) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 40 && parseInt(singleLeg) >= 17) {
+            } else if (parseInt(handsUp) <= 40 && parseInt(handsUp) >= 17) {
                 return 2;
-            } else if (parseInt(singleLeg) < 17) {
+            } else if (parseInt(handsUp) < 17) {
                 return 1;
             }
         }
     } else {
         if (age === '3') {
-            if (parseInt(singleLeg) > 41) {
+            if (parseInt(handsUp) > 41) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 41 && parseInt(singleLeg) >= 19) {
+            } else if (parseInt(handsUp) <= 41 && parseInt(handsUp) >= 19) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 18 && parseInt(singleLeg) >= 7) {
+            } else if (parseInt(handsUp) <= 18 && parseInt(handsUp) >= 7) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 6 && parseInt(singleLeg) >= 2) {
+            } else if (parseInt(handsUp) <= 6 && parseInt(handsUp) >= 2) {
                 return 2;
-            } else if (parseInt(singleLeg) < 2) {
+            } else if (parseInt(handsUp) < 2) {
                 return 1;
             }
         } else if (age === '3.5') {
-            if (parseInt(singleLeg) > 61) {
+            if (parseInt(handsUp) > 61) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 61 && parseInt(singleLeg) >= 29) {
+            } else if (parseInt(handsUp) <= 61 && parseInt(handsUp) >= 29) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 28 && parseInt(singleLeg) >= 12) {
+            } else if (parseInt(handsUp) <= 28 && parseInt(handsUp) >= 12) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 11 && parseInt(singleLeg) >= 4) {
+            } else if (parseInt(handsUp) <= 11 && parseInt(handsUp) >= 4) {
                 return 2;
-            } else if (parseInt(singleLeg) < 4) {
+            } else if (parseInt(handsUp) < 4) {
                 return 1;
             }
         } else if (age === '4') {
-            if (parseInt(singleLeg) > 77) {
+            if (parseInt(handsUp) > 77) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 77 && parseInt(singleLeg) >= 36) {
+            } else if (parseInt(handsUp) <= 77 && parseInt(handsUp) >= 36) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 35 && parseInt(singleLeg) >= 16) {
+            } else if (parseInt(handsUp) <= 35 && parseInt(handsUp) >= 16) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 15 && parseInt(singleLeg) >= 5) {
+            } else if (parseInt(handsUp) <= 15 && parseInt(handsUp) >= 5) {
                 return 2;
-            } else if (parseInt(singleLeg) < 5) {
+            } else if (parseInt(handsUp) < 5) {
                 return 1;
             }
         } else if (age === '4.5') {
-            if (parseInt(singleLeg) > 102) {
+            if (parseInt(handsUp) > 102) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 102 && parseInt(singleLeg) >= 53) {
+            } else if (parseInt(handsUp) <= 102 && parseInt(handsUp) >= 53) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 52 && parseInt(singleLeg) >= 25) {
+            } else if (parseInt(handsUp) <= 52 && parseInt(handsUp) >= 25) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 24 && parseInt(singleLeg) >= 9) {
+            } else if (parseInt(handsUp) <= 24 && parseInt(handsUp) >= 9) {
                 return 2;
-            } else if (parseInt(singleLeg) < 9) {
+            } else if (parseInt(handsUp) < 9) {
                 return 1;
             }
         } else if (age === '5') {
-            if (parseInt(singleLeg) > 125) {
+            if (parseInt(handsUp) > 125) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 125 && parseInt(singleLeg) >= 64) {
+            } else if (parseInt(handsUp) <= 125 && parseInt(handsUp) >= 64) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 63 && parseInt(singleLeg) >= 32) {
+            } else if (parseInt(handsUp) <= 63 && parseInt(handsUp) >= 32) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 31 && parseInt(singleLeg) >= 13) {
+            } else if (parseInt(handsUp) <= 31 && parseInt(handsUp) >= 13) {
                 return 2;
-            } else if (parseInt(singleLeg) < 13) {
+            } else if (parseInt(handsUp) < 13) {
                 return 1;
             }
         } else if (age === '5.5') {
-            if (parseInt(singleLeg) > 138) {
+            if (parseInt(handsUp) > 138) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 138 && parseInt(singleLeg) >= 68) {
+            } else if (parseInt(handsUp) <= 138 && parseInt(handsUp) >= 68) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 67 && parseInt(singleLeg) >= 35) {
+            } else if (parseInt(handsUp) <= 67 && parseInt(handsUp) >= 35) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 34 && parseInt(singleLeg) >= 15) {
+            } else if (parseInt(handsUp) <= 34 && parseInt(handsUp) >= 15) {
                 return 2;
-            } else if (parseInt(singleLeg) < 15) {
+            } else if (parseInt(handsUp) < 15) {
                 return 1;
             }
         } else if (age === '6') {
-            if (parseInt(singleLeg) > 148) {
+            if (parseInt(handsUp) > 148) {
                 return 5;
-            } else if (parseInt(singleLeg) <= 148 && parseInt(singleLeg) >= 72) {
+            } else if (parseInt(handsUp) <= 148 && parseInt(handsUp) >= 72) {
                 return 4;
-            } else if (parseInt(singleLeg) <= 71 && parseInt(singleLeg) >= 38) {
+            } else if (parseInt(handsUp) <= 71 && parseInt(handsUp) >= 38) {
                 return 3;
-            } else if (parseInt(singleLeg) <= 37 && parseInt(singleLeg) >= 17) {
+            } else if (parseInt(handsUp) <= 37 && parseInt(handsUp) >= 17) {
                 return 2;
-            } else if (parseInt(singleLeg) < 17) {
+            } else if (parseInt(handsUp) < 17) {
                 return 1;
             }
         }

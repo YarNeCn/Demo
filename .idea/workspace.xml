@@ -23,8 +23,8 @@
       <file leaf-file-name="systemParameter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/systemParameter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="262" column="52" selection-start-line="262" selection-start-column="36" selection-end-line="262" selection-end-column="52" />
+            <state relative-caret-position="822">
+              <caret line="285" column="10" lean-forward="true" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -69,8 +69,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="1758" column="33" lean-forward="true" selection-start-line="1758" selection-start-column="33" selection-end-line="1758" selection-end-column="33" />
+            <state relative-caret-position="341">
+              <caret line="1566" column="21" selection-start-line="1566" selection-start-column="12" selection-end-line="1566" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
@@ -86,8 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>singleLegScore</find>
-      <find>throwR</find>
       <find>网球投掷</find>
       <find>在下学期</find>
       <find>活动推荐</find>
@@ -116,6 +114,8 @@
       <find>sensitiveQuality</find>
       <find>parseFloat(run)</find>
       <find>parseFloat(twoJump)</find>
+      <find>望继续保持</find>
+      <find>handsUp</find>
     </findStrings>
     <replaceStrings>
       <replace>LHtemp</replace>
@@ -127,6 +127,7 @@
       <replace>parseFloat(balance).toFixed(1)</replace>
       <replace>parseFloat(oneJump).toFixed(1)</replace>
       <replace>parseFloat(twoJump).toFixed(1)</replace>
+      <replace>handsUp</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -402,7 +403,7 @@
       <workItem from="1550052525263" duration="24000" />
       <workItem from="1550054672102" duration="2508000" />
       <workItem from="1550109522950" duration="123000" />
-      <workItem from="1550142793763" duration="1365000" />
+      <workItem from="1550142793763" duration="1654000" />
     </task>
     <task id="LOCAL-00001" summary="修改页面样式">
       <created>1549616537233</created>
@@ -457,7 +458,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30973000" />
+    <option name="totallyTimeSpent" value="31262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -483,7 +484,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.6782123" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.02467685" />
       <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.22128174" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2539342" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18526466" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -944,8 +945,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/systemParameter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="262" column="52" selection-start-line="262" selection-start-column="36" selection-end-line="262" selection-end-column="52" />
+        <state relative-caret-position="822">
+          <caret line="285" column="10" lean-forward="true" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -988,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="1758" column="33" lean-forward="true" selection-start-line="1758" selection-start-column="33" selection-end-line="1758" selection-end-column="33" />
+        <state relative-caret-position="341">
+          <caret line="1566" column="21" selection-start-line="1566" selection-start-column="12" selection-end-line="1566" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
