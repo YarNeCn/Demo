@@ -10,7 +10,7 @@ var twoJump;//双脚连续跳
 var oneJump;//单脚连续跳
 var balance;//平衡能力
 var singleLeg;//闭眼单足立
-var bodyFlexion;//坐位体前屈
+var bodyFlexion;//坐卧体前屈
 var handsUp;//双手正撑s
 $(function () {
     $("#click").click(function (e) {
@@ -1795,7 +1795,7 @@ function getTNEvaluation() {
         YXtemp += "闭眼单足立、";
     }
     if (parseInt(bodyFlexionScore) > 4) {
-        YXtemp += "坐位体前屈、";
+        YXtemp += "坐卧体前屈、";
     }
     if (parseInt(handsUpScore) > 4) {
         YXtemp += "双手正撑、";
@@ -1828,7 +1828,7 @@ function getTNEvaluation() {
         LHtemp += "闭眼单足立、";
     }
     if (parseInt(bodyFlexionScore) == 4) {
-        LHtemp += "坐位体前屈、";
+        LHtemp += "坐卧体前屈、";
     }
     if (parseInt(handsUpScore) == 4) {
         LHtemp += "双手正撑、";
@@ -1860,7 +1860,7 @@ function getTNEvaluation() {
         HGtemp += "闭眼单足立、";
     }
     if (parseInt(bodyFlexionScore) == 3) {
-        HGtemp += "坐位体前屈、";
+        HGtemp += "坐卧体前屈、";
     }
     if (parseInt(handsUpScore) == 3) {
         HGtemp += "双手正撑、";
@@ -1893,7 +1893,7 @@ function getTNEvaluation() {
         Dtemp += "闭眼单足立、";
     }
     if (parseInt(bodyFlexionScore) <= 2) {
-        Dtemp += "坐位体前屈、";
+        Dtemp += "坐卧体前屈、";
     }
     if (parseInt(handsUpScore) <= 2) {
         Dtemp += "双手正撑、";
