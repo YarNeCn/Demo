@@ -135,7 +135,6 @@ function getScope() {
     }
 
     balanceAbility = (parseInt(balanceScore) + parseInt(singleLegScore)) / 2 * 20;
-
     flexibility = flexibility.toFixed(0);
     upperLimbStrength = upperLimbStrength.toFixed(0);
     lowerLimbStrength = lowerLimbStrength.toFixed(0);
@@ -1926,7 +1925,7 @@ function getActivityPlan() {
     var XLnengli = "";
     var temp = "";
     if (flexibility < 60) {
-        XLnengli += '<li>前滚翻、足跟竞走、劈叉排球</li>';
+        XLnengli += '<li>前滚翻、足跟竞走、劈叉拍球</li>';
         temp += "柔韧性、";
     }
     if (upperLimbStrength < 60) {

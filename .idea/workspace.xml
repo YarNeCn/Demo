@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4602b459-d9ac-4596-aee5-e49a41f0ce57" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/systemParameter/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/systemParameter/test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="systemParameter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/systemParameter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="95" column="55" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="55" />
+            <state relative-caret-position="340">
+              <caret line="187" column="30" selection-start-line="187" selection-start-column="20" selection-end-line="187" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+            <state relative-caret-position="347">
+              <caret line="2085" column="3" selection-start-line="2085" selection-start-column="1" selection-end-line="2087" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
@@ -87,8 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flexibility</find>
-      <find>alert</find>
       <find>form</find>
       <find>NutritionAdvice</find>
       <find>main</find>
@@ -117,6 +114,8 @@
       <find>parseInt(singleLeg)</find>
       <find>longJump</find>
       <find>parseInt</find>
+      <find>劈叉排球</find>
+      <find>oneJumpScore</find>
     </findStrings>
     <replaceStrings>
       <replace>LHtemp</replace>
@@ -133,6 +132,7 @@
       <replace>parseFloat(singleLeg).toFixed(0)</replace>
       <replace>parseFloat(longJump).toFixed(0)</replace>
       <replace>parseFloat</replace>
+      <replace>劈叉拍球</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -409,7 +409,7 @@
       <workItem from="1550054672102" duration="2508000" />
       <workItem from="1550109522950" duration="123000" />
       <workItem from="1550142793763" duration="2687000" />
-      <workItem from="1550196474162" duration="712000" />
+      <workItem from="1550196474162" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="修改页面样式">
       <created>1549616537233</created>
@@ -464,7 +464,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33007000" />
+    <option name="totallyTimeSpent" value="33576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -489,7 +489,7 @@
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6782123" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.02467685" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.17654172" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.33736396" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1874106" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info id="JRebel" order="2" side_tool="true" />
@@ -1009,8 +1009,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/systemParameter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="95" column="55" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="55" />
+        <state relative-caret-position="340">
+          <caret line="187" column="30" selection-start-line="187" selection-start-column="20" selection-end-line="187" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1053,8 +1053,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+        <state relative-caret-position="347">
+          <caret line="2085" column="3" selection-start-line="2085" selection-start-column="1" selection-end-line="2087" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
