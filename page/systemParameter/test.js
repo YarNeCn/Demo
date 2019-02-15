@@ -18,7 +18,7 @@ $(function () {
     });
 
     $("#reset").click(function (e) {
-        $("#resetForm")[0].reset();
+        location.reload();
     });
 
 });
