@@ -1951,7 +1951,7 @@ function getActivityPlan() {
         XLnengli += '<li>该幼儿各项测试均达标，体能发展较为正常。在下学期，望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
         $("#ActivityPlan").html(XLnengli);
     } else {
-        XLnengli += '<li>在下学期，我们将针对该幼儿的<span style="font-weight: bold">' + temp.substr(0, XLnengli.length - 1) + '</span>进行着重训练。</li>';
+        XLnengli += '<li>在下学期，我们将针对该幼儿的<span style="font-weight: bold">' + temp.substr(0, temp.length - 1) + '</span>进行着重训练。</li>';
         XLnengli += '<li>望家长积极配合幼儿园，共同帮助幼儿提高身体素质，让幼儿体能得到适当、充分的发展。</li>';
         $("#ActivityPlan").html(XLnengli);
     }
