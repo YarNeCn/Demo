@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4602b459-d9ac-4596-aee5-e49a41f0ce57" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/systemParameter/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/page/systemParameter/test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="1566" column="37" selection-start-line="1566" selection-start-column="37" selection-end-line="1566" selection-end-column="37" />
+            <state relative-caret-position="158">
+              <caret line="1566" selection-start-line="1566" selection-end-line="1566" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
@@ -87,12 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>color</find>
-      <find>各项测试结果</find>
-      <find>upperLimbStrength</find>
-      <find>bodyFlexion</find>
-      <find>bodyFlexionScore</find>
-      <find>坐位体前屈</find>
       <find>表现</find>
       <find>balanceAbility</find>
       <find>balanceScore</find>
@@ -107,7 +100,6 @@
       <find>singleLeg</find>
       <find>balance</find>
       <find>throwR</find>
-      <find>getSingleLeg</find>
       <find>parseInt(singleLeg)</find>
       <find>longJump</find>
       <find>parseInt</find>
@@ -117,6 +109,13 @@
       <find>getTwoJump</find>
       <find>round</find>
       <find>parseFloat</find>
+      <find>getSingleLeg</find>
+      <find>达到优秀</find>
+      <find>if(age&gt;5){</find>
+      <find>if(age&gt;5){</find>
+      <find>flexibility</find>
+      <find>单脚连续跳</find>
+      <find>oneJump</find>
     </findStrings>
     <replaceStrings>
       <replace>LHtemp</replace>
@@ -413,7 +412,7 @@
       <workItem from="1550109522950" duration="123000" />
       <workItem from="1550142793763" duration="2687000" />
       <workItem from="1550196474162" duration="1638000" />
-      <workItem from="1550210300820" duration="2733000" />
+      <workItem from="1550210300820" duration="3606000" />
     </task>
     <task id="LOCAL-00001" summary="修改页面样式">
       <created>1549616537233</created>
@@ -468,7 +467,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36666000" />
+    <option name="totallyTimeSpent" value="37539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -493,8 +492,8 @@
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6782123" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.02467685" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.33736396" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18955651" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.33736396" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18955651" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -1057,8 +1056,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="1566" column="37" selection-start-line="1566" selection-start-column="37" selection-end-line="1566" selection-end-column="37" />
+        <state relative-caret-position="158">
+          <caret line="1566" selection-start-line="1566" selection-end-line="1566" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />

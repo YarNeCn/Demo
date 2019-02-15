@@ -1564,7 +1564,6 @@ function gethandsUp() {
 }
 
 function getSingleLeg() {
-    alert(round(singleLeg).toFixed(0));
     if (getSex() === 0) {
         if (age === '3') {
             if (round(singleLeg).toFixed(0) > 20) {
@@ -1785,8 +1784,10 @@ function getTNEvaluation() {
     if (parseInt(twoJumpScore) > 4) {
         YXtemp += "双脚连续跳、";
     }
-    if (parseInt(oneJumpScore) > 4) {
-        YXtemp += "单脚连续跳、";
+    if(age>=5){
+        if (parseInt(oneJumpScore) > 4) {
+            YXtemp += "单脚连续跳、";
+        }
     }
     if (parseInt(balanceScore) > 4) {
         YXtemp += "走平衡木、";
@@ -1818,8 +1819,10 @@ function getTNEvaluation() {
     if (parseInt(twoJumpScore) == 4) {
         LHtemp += "双脚连续跳、";
     }
-    if (parseInt(oneJumpScore) == 4) {
-        LHtemp += "单脚连续跳、";
+    if(age>=5){
+        if (parseInt(oneJumpScore) == 4) {
+            LHtemp += "单脚连续跳、";
+        }
     }
     if (parseInt(balanceScore) == 4) {
         LHtemp += "走平衡木、";
@@ -1850,8 +1853,10 @@ function getTNEvaluation() {
     if (parseInt(twoJumpScore) == 3) {
         HGtemp += "双脚连续跳、";
     }
-    if (parseInt(oneJumpScore) == 3) {
-        HGtemp += "单脚连续跳、";
+    if(age>=5){
+        if (parseInt(oneJumpScore) == 3) {
+            HGtemp += "单脚连续跳、";
+        }
     }
     if (parseInt(balanceScore) == 3) {
         HGtemp += "走平衡木、";
@@ -1883,8 +1888,10 @@ function getTNEvaluation() {
     if (parseInt(twoJumpScore) <= 2) {
         Dtemp += "双脚连续跳、";
     }
-    if (parseInt(oneJumpScore) <= 2) {
-        Dtemp += "单脚连续跳、";
+    if(age>=5){
+        if (parseInt(oneJumpScore) <= 2) {
+            Dtemp += "单脚连续跳、";
+        }
     }
     if (parseInt(balanceScore) <= 2) {
         Dtemp += "走平衡木、";
