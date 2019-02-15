@@ -865,7 +865,7 @@ function getBalance() {
                 return 5;
             } else if (round(balance).toFixed(1) >= 6.6 && round(balance).toFixed(1) <= 10.5) {
                 return 4;
-            } else if (round(balance).toFixed(1) >= 10.6 && round(twoJump) <= 16.8) {
+            } else if (round(balance).toFixed(1) >= 10.6 && round(balance) <= 16.8) {
                 return 3;
             } else if (round(balance).toFixed(1) >= 16.9 && round(balance).toFixed(1) <= 30.0) {
                 return 2;
