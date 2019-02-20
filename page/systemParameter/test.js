@@ -2090,9 +2090,9 @@ function echart2() {
     //使用制定的配置项和数据显示图表
     myChart.setOption(option);
 
- /*   setTimeout(function () {
+    setTimeout(function () {
         download("#reportContent");
-    }, 500)*/
+    }, 500)
 }
 
 
