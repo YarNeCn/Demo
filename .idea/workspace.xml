@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4602b459-d9ac-4596-aee5-e49a41f0ce57" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/systemParameter/systemParameter.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/systemParameter/systemParameter.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="systemParameter.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/systemParameter/systemParameter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="294" column="72" selection-start-line="294" selection-start-column="72" selection-end-line="294" selection-end-column="72" />
+            <state relative-caret-position="172">
+              <caret line="242" column="51" selection-start-line="242" selection-start-column="51" selection-end-line="242" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -446,7 +445,7 @@
       <workItem from="1550223721646" duration="271000" />
       <workItem from="1550224323461" duration="655000" />
       <workItem from="1550541530785" duration="1105000" />
-      <workItem from="1550627211418" duration="2725000" />
+      <workItem from="1550627211418" duration="2855000" />
     </task>
     <task id="LOCAL-00001" summary="修改页面样式">
       <created>1549616537233</created>
@@ -501,7 +500,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44643000" />
+    <option name="totallyTimeSpent" value="44773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -526,9 +525,9 @@
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6782123" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.02467685" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49785408" visible="true" weight="0.22370012" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49785408" visible="true" weight="0.22370012" />
       <window_info anchor="bottom" id="Problems" order="14" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20457797" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20457797" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="8" side_tool="true" />
@@ -1305,8 +1304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/systemParameter/systemParameter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="294" column="72" selection-start-line="294" selection-start-column="72" selection-end-line="294" selection-end-column="72" />
+        <state relative-caret-position="172">
+          <caret line="242" column="51" selection-start-line="242" selection-start-column="51" selection-end-line="242" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
