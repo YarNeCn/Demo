@@ -1802,7 +1802,7 @@ function getTNEvaluation() {
         YXtemp += "双手正撑、";
     }
     if (YXtemp != "") {
-        str += '<li><span style="font-weight: bold">' + YXtemp.substr(0, YXtemp.length - 1) + '</span>达到优秀水平</li>';
+        str += '<li><span style="font-weight: bold">' + YXtemp.substr(0, YXtemp.length - 1) + '</span>达到优秀水平;</li>';
     }
 
 
@@ -1837,7 +1837,7 @@ function getTNEvaluation() {
         LHtemp += "双手正撑、";
     }
     if (LHtemp != "") {
-        str += '<li><span style="font-weight: bold">' + LHtemp.substr(0, LHtemp.length - 1) + '</span>达到良好水平</li>';
+        str += '<li><span style="font-weight: bold">' + LHtemp.substr(0, LHtemp.length - 1) + '</span>达到良好水平;</li>';
     }
 
     var HGtemp = "";
@@ -1871,7 +1871,7 @@ function getTNEvaluation() {
         HGtemp += "双手正撑、";
     }
     if (HGtemp != "") {
-        str += '<li><span style="font-weight: bold">' + HGtemp.substr(0, HGtemp.length - 1) + '</span>达到合格水平</li>';
+        str += '<li><span style="font-weight: bold">' + HGtemp.substr(0, HGtemp.length - 1) + '</span>达到合格水平;</li>';
     }
 
 
@@ -2036,8 +2036,8 @@ function echart2() {
                     {name: '下肢力量', max: 100},
                     {name: '上肢力量', max: 100}
                 ],
-                center: ['50%', '55%'],
-                radius: 150,
+                center: ['50%', '40%'],
+                radius: 100,
                 splitLine: {
                     lineStyle: {
                         width: 4,
@@ -2090,9 +2090,9 @@ function echart2() {
     //使用制定的配置项和数据显示图表
     myChart.setOption(option);
 
-    setTimeout(function () {
+ /*   setTimeout(function () {
         download("#reportContent");
-    }, 500)
+    }, 500)*/
 }
 
 

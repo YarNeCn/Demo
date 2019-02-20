@@ -135,18 +135,20 @@
 ">
 			<tbody>
 			<tr>
-				<td rowspan="2" style="width: 13%">姓名</td>
-				<td rowspan="2"  id="username" style="text-align: left;width: 13%"></td>
-				<td  style="width: 13%">年龄</td>
+				<td style="width: 10%">姓名</td>
+				<td  id="username" style="text-align: left;width: 20%"></td>
+				<td  style="width: 10%">年龄</td>
 				<td id="userage" style="text-align: left;width: 13%"></td>
-				<td  style="width: 13%">班级</td>
-				<td id="userclass" style="text-align: left;"></td>
-			</tr>
-			<tr>
-				<td  style="width: 13%">性别</td>
-				<td id="usersex" style="text-align: left;width: 13%"></td>
 				<td  style="width: 13%">园所</td>
 				<td id="usergarden" style="text-align: left;"></td>
+			</tr>
+			<tr>
+				<td  style="width: 10%">班级</td>
+				<td id="userclass" style="text-align: left;width: 20%"></td>
+				<td  style="width: 10%">性别</td>
+				<td id="usersex" style="text-align: left;width: 13%"></td>
+				<td  style="width: 13%">学期</td>
+				<td id="asd" style="text-align: left;"></td>
 			</tr>
 
 
@@ -155,9 +157,10 @@
 		<h1 style="text-align:left;font-size: 22px;font-weight: bold;margin-top: 29px;">各项测试结果：<span style="font-weight: normal;font-size: 15px;">（注： 5分-优 &nbsp;   4分-良 &nbsp;  3分-中 &nbsp;   2分-差 &nbsp;   1分-发展中）</span></h1>
 		<table class="layui-table">
 			<colgroup>
-				<col width="150">
-				<col width="150">
-				<col width="150">
+				<col width="100">
+				<col width="50">
+				<col width="50">
+				<col width="300">
 			</colgroup>
 			<thead>
 			<tr>
@@ -229,12 +232,12 @@
 				<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
 				<h1 style="text-align:left;font-size: 22px;font-weight: bold">综合评定分析：</h1>
 
-				<div id="main" style="width: 50%; height: 400px;float: left;margin-top: 8px;"></div>
-				<div style="width: 50%;float: left;margin-top: 130px;">
-					<table class="layui-table" >
+				<div id="main" style="width: 40%; height: 330px;float: left;margin-top: 8px;"></div>
+				<div style="width: 60%;float: left;margin-top:3%">
+					<table class="layui-table"  style="height: 100%">
 						<colgroup>
-							<col width="150">
-							<col width="150">
+							<col width="100">
+							<col width="100">
 							<col width="400">
 						</colgroup>
 						<tbody>
