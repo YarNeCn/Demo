@@ -12,6 +12,7 @@ var balance;//平衡能力
 var singleLeg;//闭眼单足立
 var bodyFlexion;//坐卧体前屈
 var handsUp;//双手正撑s
+var xueqi;//双手正撑s
 $(function () {
     $("#click").click(function (e) {
         initData();
@@ -55,6 +56,7 @@ function initData() {
     bodyFlexion = $("#bodyFlexion").val();
     handsUp = $("#handsUp").val();
     singleLeg = $("#singleLeg").val();
+    xueqi = $("#xueqi").val();
     $("#reportContent").css("display", "block");
     getScope();
     getTNEvaluation();
@@ -89,6 +91,7 @@ function getScope() {
     $("#usersex").text(sex);
     $("#usergarden").text(garden);
     $("#userclass").text(classR);
+    $("#xueqitd").text(xueqi);
     $("#runScope").text(round(run).toFixed(1) + " s");
     $("#runScope").next().text(runScore + " 分");
 
