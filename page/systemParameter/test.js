@@ -1909,7 +1909,7 @@ function getTNEvaluation() {
         Dtemp += "双手正撑、";
     }
     if (Dtemp != "") {
-        str += '<li><span style="font-weight: bold">' + Dtemp.substr(0, Dtemp.length - 1) + '</span>分数略低，该幼儿还需努力并加强相应项目练习</li>';
+        str += '<li><span style="font-weight: bold">' + Dtemp.substr(0, Dtemp.length - 1) + '</span>分数略低，该幼儿还需努力并加强相应项目练习。</li>';
     }
 
     var XLnengli = "";
