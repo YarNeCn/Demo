@@ -661,9 +661,9 @@ function getThrowR() {
                 return 5;
             } else if (round(throwR).toFixed(1) <= 8.5 && round(throwR).toFixed(1) >= 6.5) {
                 return 4;
-            } else if (round(throwR).toFixed(1) <= 6.0 && round(throwR).toFixed(1) >= 5.0) {
+            } else if (round(throwR).toFixed(1) <= 6.4 && round(throwR).toFixed(1) >= 5.0) {
                 return 3;
-            } else if (round(throwR).toFixed(1) <= 4.5 && round(throwR).toFixed(1) >= 3.5) {
+            } else if (round(throwR).toFixed(1) <= 4.9 && round(throwR).toFixed(1) >= 3.5) {
                 return 2;
             } else if (round(throwR).toFixed(1) < 3.5) {
                 return 1;
