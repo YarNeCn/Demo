@@ -98,7 +98,13 @@ function getScope() {
     $("#longJumpScore").text(round(longJump).toFixed(1) + " cm");
     $("#longJumpScore").next().text(longJumpScore + " 分");
 
-    if (age >= 5) {
+    // 是否强制为小班
+    var arr = new Array();
+    $("input:checkbox[name='like']:checked").each(function(i){
+        arr[i] = $(this).val();
+    });
+
+    if (age >= 5&&arr.length==0) {
         $("#oneJumpScore").text(round(oneJump).toFixed(1) + " s");
         $("#oneJumpScore").next().text(oneJumpScore + " 分");
     }
@@ -126,7 +132,7 @@ function getScope() {
 
     flexibility = bodyFlexionScore * 20;
     upperLimbStrength = (parseInt(throwScore) + parseInt(handsUpScore)) / 2 * 20;
-    if (age >= 5) {
+    if (age >= 5&&arr.length==0) {
         lowerLimbStrength = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore)) / 4 * 20;
         sensitiveQuality = (parseInt(runScore) + parseInt(longJumpScore) + parseInt(throwScore) + parseInt(oneJumpScore) + parseInt(twoJumpScore) + parseInt(singleLegScore)
             + parseInt(balanceScore) + parseInt(handsUpScore) + parseInt(bodyFlexionScore)) / 9 * 20;
