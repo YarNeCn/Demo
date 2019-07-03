@@ -39,6 +39,7 @@ var upperLimbStrength; //上肢力量
 var lowerLimbStrength; //下肢力量
 var balanceAbility; //平衡能力
 var sensitiveQuality; //灵敏素质
+var arr = new Array(); //是否是强制小班 arr>0就是强制小班
 
 function initData() {
 
@@ -99,7 +100,7 @@ function getScope() {
     $("#longJumpScore").next().text(longJumpScore + " 分");
 
     // 是否强制为小班
-    var arr = new Array();
+
     $("input:checkbox[name='like']:checked").each(function(i){
         arr[i] = $(this).val();
     });
@@ -1793,7 +1794,7 @@ function getTNEvaluation() {
     if (parseInt(twoJumpScore) > 4) {
         YXtemp += "双脚连续跳、";
     }
-    if(age>=5){
+    if(age>=5&&arr.length==0){
         if (parseInt(oneJumpScore) > 4) {
             YXtemp += "单脚连续跳、";
         }
@@ -1828,7 +1829,7 @@ function getTNEvaluation() {
     if (parseInt(twoJumpScore) == 4) {
         LHtemp += "双脚连续跳、";
     }
-    if(age>=5){
+    if(age>=5&&arr.length==0){
         if (parseInt(oneJumpScore) == 4) {
             LHtemp += "单脚连续跳、";
         }
@@ -1862,7 +1863,7 @@ function getTNEvaluation() {
     if (parseInt(twoJumpScore) == 3) {
         HGtemp += "双脚连续跳、";
     }
-    if(age>=5){
+    if(age>=5&&arr.length==0){
         if (parseInt(oneJumpScore) == 3) {
             HGtemp += "单脚连续跳、";
         }
@@ -1897,7 +1898,7 @@ function getTNEvaluation() {
     if (parseInt(twoJumpScore) <= 2) {
         Dtemp += "双脚连续跳、";
     }
-    if(age>=5){
+    if(age>=5&&arr.length==0){
         if (parseInt(oneJumpScore) <= 2) {
             Dtemp += "单脚连续跳、";
         }
